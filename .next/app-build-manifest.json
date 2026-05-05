@@ -1,0 +1,225 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/_not-found/page-107910a694aba528.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/css/a6aa10079f29dc60.css",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/layout-0df78ef27757f6a9.js"
+    ],
+    "/admin-pannel/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/admin-pannel/page-bda162f67c72e4e3.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/contact/page-01f9223ea07ad93f.js"
+    ],
+    "/ministry/prayer-request/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/ministry/prayer-request/page-94ada789636f8fc0.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/page-75a0b420dc0d19e2.js"
+    ],
+    "/about/board-of-directors/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/about/board-of-directors/page-bb19407c90f13840.js"
+    ],
+    "/about/about-deva/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/about/about-deva/page-a002bd46fee62393.js"
+    ],
+    "/charity/support-us/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/charity/support-us/page-220641ebce6b07e1.js"
+    ],
+    "/charity/helping-hands-for-children/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/charity/helping-hands-for-children/page-833f4beb4370e48c.js"
+    ],
+    "/media/books/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/media/books/page-f3eadfb3693510a4.js"
+    ],
+    "/charity/widows-care/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/charity/widows-care/page-06533ceb73bdf2e4.js"
+    ],
+    "/media/photo-gallery/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/media/photo-gallery/page-edd36f146a099dde.js"
+    ],
+    "/ministry/divine-encounter/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/ministry/divine-encounter/page-e4c27752665b15c8.js"
+    ],
+    "/ministry/native-missionaries/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/ministry/native-missionaries/page-abfcbf2740866e05.js"
+    ],
+    "/ministry/helping-pastors-building-churches/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/ministry/helping-pastors-building-churches/page-3f72c341350cf510.js"
+    ],
+    "/ministry/orphans-poor-children/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/ministry/orphans-poor-children/page-f553db3898962762.js"
+    ],
+    "/ministry/pastors-conferences/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/ministry/pastors-conferences/page-9a90fc5dd8f6a432.js"
+    ],
+    "/ministry/magazine/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/ministry/magazine/page-37fb892a3811c138.js"
+    ],
+    "/ministry/odisha-outreach/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/ministry/odisha-outreach/page-2c7b8795584d3379.js"
+    ],
+    "/ministry/widows/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/ministry/widows/page-10dfa93faf9edf27.js"
+    ],
+    "/ministry/preaching-the-gospel/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/ministry/preaching-the-gospel/page-70fc5dd561c02bcf.js"
+    ],
+    "/ministry/spiritual-community-hubs/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/app/ministry/spiritual-community-hubs/page-2632f6e317e4fdb7.js"
+    ],
+    "/support/mission-trip-to-india/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/support/mission-trip-to-india/page-a01267fee60487ca.js"
+    ],
+    "/support/prayer-support/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/app/support/prayer-support/page-620f042bdd40a5ab.js"
+    ],
+    "/support/financial-partnership/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/support/financial-partnership/page-058b890fbaa9721e.js"
+    ],
+    "/support/tv-ministries/page": [
+      "static/chunks/webpack-1796d5ecd61cbd74.js",
+      "static/chunks/fd9d1056-e402d90333abc26a.js",
+      "static/chunks/23-7ee9680f605b974f.js",
+      "static/chunks/main-app-51af2e81166305ca.js",
+      "static/chunks/231-26a62e46dfb94492.js",
+      "static/chunks/173-a0c83e7981a74b6d.js",
+      "static/chunks/app/support/tv-ministries/page-1f95ad63f9065f9e.js"
+    ]
+  }
+}

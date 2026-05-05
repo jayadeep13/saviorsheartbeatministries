@@ -1,0 +1,14 @@
+
+> saviors-heartbeat@1.0.0 dev
+> next dev -p 3001
+
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3001
+
+ ✓ Starting...
+ ✓ Ready in 4.3s
+ ○ Compiling /api/media ...
+ ✓ Compiled /api/media in 7.5s (645 modules)
+ GET / 200 in 8077ms
+ GET /api/media?category=gallery 200 in 8060ms
+ GET /media/photo-gallery 200 in 8070ms

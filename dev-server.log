@@ -1,0 +1,70 @@
+
+> saviors-heartbeat@1.0.0 dev
+> next dev -p 3002
+
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3002
+
+ ✓ Starting...
+ ✓ Ready in 3.3s
+ ○ Compiling /ministry/odisha-outreach ...
+ ✓ Compiled /ministry/odisha-outreach in 5.3s (575 modules)
+ GET /ministry/odisha-outreach 200 in 5773ms
+ GET /ministry/odisha-outreach 200 in 153ms
+ ✓ Compiled /api/media in 489ms (331 modules)
+ GET /api/media?category=gallery 200 in 689ms
+ GET /api/media?category=gallery 200 in 697ms
+ ✓ Compiled in 1477ms (575 modules)
+ ✓ Compiled in 1078ms (575 modules)
+ ✓ Compiled in 1122ms (575 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 528ms (564 modules)
+ GET /wod.jpg 404 in 840ms
+ ✓ Compiled in 1300ms (578 modules)
+ ✓ Compiled in 1570ms (575 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 722ms (578 modules)
+ GET /od3.jpg 404 in 967ms
+ GET /ministry/odisha-outreach 200 in 140ms
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.8s (788 modules)
+ GET /od3.jpg 404 in 3053ms
+ ○ Compiling /api/media ...
+ ✓ Compiled /api/media in 589ms (372 modules)
+ GET /api/media?category=gallery 200 in 810ms
+ GET /api/media?category=gallery 200 in 802ms
+ ✓ Compiled in 2.1s (836 modules)
+ GET /_next/static/webpack/3b5e5715c6dcce4a.webpack.hot-update.json 404 in 915ms
+ GET /ministry/odisha-outreach 200 in 126ms
+ GET /api/media?category=gallery 200 in 43ms
+ GET /api/media?category=gallery 200 in 40ms
+ GET /.well-known/appspecific/com.chrome.devtools.json 404 in 75ms
+ ✓ Compiled in 2.3s (797 modules)
+ ✓ Compiled in 1598ms (797 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 2.8s (864 modules)
+ ✓ Compiled /_not-found in 460ms (853 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 729ms (855 modules)
+ GET /_next/static/css/app/layout.css?v=1778016654104 500 in 5450ms
+ ✓ Compiled /api/media in 489ms (416 modules)
+ GET /api/media?category=gallery 200 in 747ms
+ GET /api/media?category=gallery 200 in 754ms
+ ✓ Compiled in 3s (864 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1418ms (867 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 778ms (855 modules)
+ GET /_next/static/css/app/layout.css?v=1778016849314 500 in 2301ms
+ GET /_next/static/css/app/layout.css?v=1778016851071 500 in 457ms
+ ✓ Compiled in 1480ms (869 modules)
+ GET /_next/static/css/app/layout.css?v=1778016854795 500 in 50ms
+ ✓ Compiled in 391ms (855 modules)
+ ✓ Compiled in 3.4s (864 modules)
+ ✓ Compiled /_not-found in 239ms (853 modules)
+ GET / 200 in 339ms
+ GET /_next/static/chunks/main-app.js?v=1778016935580 404 in 124ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 121ms
+ GET / 200 in 205ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 136ms
+ GET /_next/static/chunks/main-app.js?v=1778016942389 404 in 141ms
