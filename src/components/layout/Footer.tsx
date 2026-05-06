@@ -169,13 +169,13 @@ export default function Footer() {
   <div className="border-t border-white/5 bg-black">
   <div className="max-w-7xl mx-auto px-4 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
     {/* Copyright Text */}
-    <p className="text-white/30 text-[10px] font-sans uppercase tracking-wider order-3 md:order-1">
+    <p className="text-white/70 md:text-white/30 text-[10px] font-sans uppercase tracking-wider order-3 md:order-1">
       © 2026 Savior&apos;s Heartbeat Ministries. All rights reserved.
     </p>
 
     {/* Developer Credit with Logo and Link */}
     <div className="flex items-center gap-3 order-1 md:order-2 group">
-      <span className="text-white/20 text-[10px] font-sans uppercase tracking-[0.15em]">Designed & Developed by</span>
+      <span className="text-white/70 md:text-white/20 text-[10px] font-sans uppercase tracking-[0.15em]">Designed & Developed by</span>
       <a 
         href="https://www.pandjtechnologies.com/" 
         target="_blank" 
@@ -198,7 +198,7 @@ export default function Footer() {
     </div>
     
     {/* Location */}
-    <p className="text-white/20 text-[10px] font-sans uppercase tracking-wider order-2 md:order-3">
+    <p className="text-white/70 md:text-white/20 text-[10px] font-sans uppercase tracking-wider order-2 md:order-3">
       Vijayawada, Andhra Pradesh, India
     </p>
   </div>

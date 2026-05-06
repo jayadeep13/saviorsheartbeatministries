@@ -1,7 +1,5 @@
 {
-  "/media/photo-gallery/page": "app/media/photo-gallery/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/support/prayer-support/page": "app/support/prayer-support/page.js",
-  "/about/board-of-directors/page": "app/about/board-of-directors/page.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/page": "app/page.js",
+  "/api/media/route": "app/api/media/route.js"
 }

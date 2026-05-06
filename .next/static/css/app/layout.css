@@ -4475,6 +4475,14 @@ body { font-family: 'Inter', system-ui, sans-serif; background: var(--cream); co
   .md\:tracking-\[0\.6em\]{
     letter-spacing: 0.6em;
   }
+
+  .md\:text-white\/20{
+    color: rgb(255 255 255 / 0.2);
+  }
+
+  .md\:text-white\/30{
+    color: rgb(255 255 255 / 0.3);
+  }
 }
 
 @media (min-width: 1024px){

@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/page": [
+    "/about/about-deva/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/about/about-deva/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,35 +11,45 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/media/photo-gallery/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/media/photo-gallery/page.js"
-    ],
-    "/media/books/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/media/books/page.js"
-    ],
-    "/contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
-    ],
-    "/support/prayer-support/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/support/prayer-support/page.js"
-    ],
     "/about/board-of-directors/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about/board-of-directors/page.js"
     ],
-    "/about/about-deva/page": [
+    "/ministry/preaching-the-gospel/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/about-deva/page.js"
+      "static/chunks/app/ministry/preaching-the-gospel/page.js"
+    ],
+    "/ministry/pastors-conferences/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ministry/pastors-conferences/page.js"
+    ],
+    "/ministry/helping-pastors-building-churches/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ministry/helping-pastors-building-churches/page.js"
+    ],
+    "/ministry/widows/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ministry/widows/page.js"
+    ],
+    "/charity/widows-care/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/charity/widows-care/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }
