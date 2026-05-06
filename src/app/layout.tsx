@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Savior's Heartbeat Ministries | Vijayawada, India",
   description: "Preaching and Preparing People for HIS Coming. A premier Christian ministry in Vijayawada, India — serving communities through evangelism, charity, and spiritual transformation since 1976.",
   keywords: "Saviors Heartbeat Ministries, Christian Ministry India, Vijayawada Church, Telugu Ministry, Evangelism India",
+  icons: {
+    icon: '/LOGG.svg',
+    shortcut: '/LOGG.svg',
+    apple: '/LOGG.svg',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
