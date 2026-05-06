@@ -54,7 +54,7 @@ export default function Navbar() {
     <>
       <header className={`absolute top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? 'bg-charcoal/95 backdrop-blur-xl border-b border-white/8 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
+          ? 'bg-black/95 backdrop-blur-xl border-b border-white/8 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.4)]'
           : 'bg-transparent py-5'
       }`}>
         {/* Top ribbon */}
@@ -89,10 +89,10 @@ export default function Navbar() {
               <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-gold/30 to-primary/30 blur-sm -z-10 group-hover:blur-md transition-all duration-500" />
             </div>
             <div className="block min-w-0">
-              <div className="font-display text-[#B51657] font-semibold text-[13px] leading-none tracking-wide sm:text-[15px] xl:text-base">
+              <div className="font-display text-[#B51657] font-semibold text-[17px] leading-none tracking-wide sm:text-[18px] lg:text-[15px] xl:text-base">
                 Savior&apos;s Heartbeat
               </div>
-              <div className="mt-1 text-[8px] font-sans font-medium uppercase tracking-[0.2em] text-gold sm:text-[9px] sm:tracking-[0.24em] xl:text-[10px] xl:tracking-[0.25em]">
+              <div className="mt-1 text-[10px] font-sans font-medium uppercase tracking-[0.2em] text-gold sm:text-[11px] sm:tracking-[0.24em] lg:text-[9px] xl:text-[10px] xl:tracking-[0.25em]">
                 Ministries
               </div>
             </div>
@@ -126,7 +126,7 @@ export default function Navbar() {
                       desktopOpen === item.label ? 'drop-menu-open' : ''
                     }`}
                   >
-                    <div className="bg-charcoal/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-hidden">
+                    <div className="bg-black/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-[0_24px_80px_rgba(0,0,0,0.5)] overflow-hidden">
                       <div className="h-0.5 bg-gradient-to-r from-transparent via-[#22C55E] to-transparent" />
                       <div className="p-2">
                         {item.sub.map((child) => (
@@ -176,7 +176,7 @@ export default function Navbar() {
       {mobileOpen && (
         <div className="fixed inset-0 z-[60] lg:hidden">
           <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
-          <div className="absolute top-0 right-0 bottom-0 w-full bg-charcoal/98 backdrop-blur-xl border-l border-white/10 shadow-2xl overflow-y-auto">
+          <div className="absolute top-0 right-0 bottom-0 w-full bg-black backdrop-blur-xl border-l border-white/10 shadow-2xl overflow-y-auto">
             {/* Mobile header */}
             <div className="flex items-center justify-between p-5 border-b border-white/10">
               <div className="flex items-center gap-3">
@@ -190,8 +190,8 @@ export default function Navbar() {
                   />
                 </div>
                 <div>
-                  <div className="font-display text-[#B51657] text-base font-semibold leading-none">Savior&apos;s Heartbeat</div>
-                  <div className="text-gold text-[10px] font-sans font-medium tracking-[0.25em] uppercase mt-1">Ministries</div>
+                  <div className="font-display text-[#B51657] text-xl font-semibold leading-none">Savior&apos;s Heartbeat</div>
+                  <div className="text-gold text-xs font-sans font-medium tracking-[0.25em] uppercase mt-1">Ministries</div>
                 </div>
               </div>
               <button onClick={() => setMobileOpen(false)} className="w-8 h-8 flex items-center justify-center text-white/60 hover:text-white rounded-lg hover:bg-white/10">✕</button>

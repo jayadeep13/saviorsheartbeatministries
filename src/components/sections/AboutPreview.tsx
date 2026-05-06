@@ -35,7 +35,7 @@ export default function AboutPreview() {
                 <div className="grid min-w-[160px] grid-cols-2 gap-4">
                   {[
                     { n: '12', l: 'Churches' },
-                    { n: '43', l: 'Children' },
+                    { n: '100+', l: 'Children' },
                     { n: '50+', l: 'Years' },
                     { n: '6+', l: 'Crusades' },
                   ].map((s) => (

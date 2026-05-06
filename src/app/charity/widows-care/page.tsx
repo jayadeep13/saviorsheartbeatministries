@@ -37,7 +37,7 @@ const ways = [
   { title: 'Spread Awareness', detail: 'Share this page and use #SupportWidows' },
 ]
 
-export function WidowsCareContent({
+function WidowsCareContent({
   eyebrow = 'Charity',
   title = 'Widows Care',
   subtitle = 'Supporting forgotten widows by restoring dignity and reviving hope',

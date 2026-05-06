@@ -46,7 +46,7 @@ export default function CharityImpact() {
                 </div>
 
                 <div className="absolute left-6 bottom-6">
-                  <div className="font-heading text-2xl font-semibold text-white">43 Children</div>
+                  <div className="font-heading text-2xl font-semibold text-white">100+ Children</div>
                   <div className="mt-1 font-body text-sm text-white/75">Loved, cared for, and growing</div>
                 </div>
               </div>
