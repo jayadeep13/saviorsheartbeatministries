@@ -213,3 +213,121 @@ body { font-family: 'Inter', system-ui, sans-serif; background: var(--cream); co
 .animate-fadeUp {
   animation: fadeUp 0.9s ease-out forwards;
 }
+
+@keyframes boardHeroFade {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-hero-fade {
+  animation: boardHeroFade 40s linear infinite;
+}
+
+.board-matter-toggle:checked ~ div {
+  max-height: 8000px !important;
+}
+
+.board-matter-toggle:checked ~ div > div:last-child {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+.board-matter-toggle:checked ~ div + div label span:first-child {
+  display: none !important;
+}
+
+.board-matter-toggle:checked ~ div + div label span:last-child {
+  display: block !important;
+}
+
+.board-matter-toggle:checked ~ div + div label svg {
+  transform: rotate(180deg);
+}
+
+@keyframes boardHeroCarousel {
+  0% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  3% {
+    opacity: 1;
+  }
+  12.5% {
+    opacity: 1;
+  }
+  15.5% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes boardImageMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes supportHeroCarousel {
+  0% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  6% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+.support-feature-image {
+  animation: supportImageFloat 7s ease-in-out infinite;
+}
+
+.support-feature-image img {
+  transition: transform 900ms ease;
+}
+
+.support-feature-image:hover img {
+  transform: scale(1.045);
+}
+
+@keyframes supportImageFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

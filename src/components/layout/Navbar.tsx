@@ -15,24 +15,15 @@ const nav = [
       { label: 'Helping Pastors & Building Churches', href: '/ministry/helping-pastors-building-churches', desc: 'Helping local churches thrive and expand' },
       { label: 'Orphans & Poor Children', href: '/ministry/orphans-poor-children', desc: 'Food, education, family and hope' },
       { label: 'Widows', href: '/ministry/widows', desc: 'Honor, dignity, comfort and care' },
-      { label: 'Odisha Outreach', href: '/ministry/odisha-outreach', desc: 'Reaching unreached villages and districts' },
       { label: 'SPANDANA Magazine', href: '/ministry/magazine', desc: 'Telugu Christian publication since 1976' },
     ]
   },
-  {
-    label: 'Support', href: '#',
-    sub: [
-      { label: 'Prayer Support', href: '/support/prayer-support', desc: 'Stand with us in intercession' },
-      { label: 'Mission Trip to India', href: '/support/mission-trip-to-india', desc: 'Preach, teach and serve in the field' },
-      { label: 'Financial Partnership', href: '/support/financial-partnership', desc: 'Sponsor crusades, pastors and care' },
-      { label: 'TV Ministries', href: '/support/tv-ministries', desc: 'Broadcasting hope every morning' },
-    ]
-  },
+  { label: 'Support', href: '/support' },
   {
     label: 'Media', href: '#',
     sub: [
       { label: 'Photo Gallery', href: '/media/photo-gallery', desc: 'Glimpses of God\'s work' },
-      { label: 'Books', href: '/media/books', desc: 'Spiritual literature' },
+      { label: 'Magzine/Books', href: '/media/books', desc: 'Spiritual literature' },
     ]
   },
   { label: 'Contact', href: '/contact' },
@@ -89,9 +80,12 @@ export default function Navbar() {
               <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-gold/30 to-primary/30 blur-sm -z-10 group-hover:blur-md transition-all duration-500" />
             </div>
             <div className="block min-w-0">
-              <div className="font-display text-[#B51657] font-semibold text-[17px] leading-none tracking-wide sm:text-[18px] lg:text-[15px] xl:text-base">
-                Savior&apos;s Heartbeat
-              </div>
+             <div 
+  className="text-[#B51657] font-semibold text-[17px] leading-none tracking-wide sm:text-[24px] lg:text-[15px] xl:text-base"
+  style={{ fontFamily: 'Mistral, cursive, sans-serif' }}
+>
+  Savior&apos;s Heartbeat
+</div>
               <div className="mt-1 text-[10px] font-sans font-medium uppercase tracking-[0.2em] text-gold sm:text-[11px] sm:tracking-[0.24em] lg:text-[9px] xl:text-[10px] xl:tracking-[0.25em]">
                 Ministries
               </div>
@@ -241,7 +235,7 @@ export default function Navbar() {
                   className="block text-center py-3.5 bg-gradient-to-r from-primary to-wine text-white font-semibold rounded-2xl text-sm shadow-glow">
                   🙏 Send Prayer Request
                 </Link>
-                <Link href="/support/financial-partnership" onClick={() => setMobileOpen(false)}
+                <Link href="/support" onClick={() => setMobileOpen(false)}
                   className="block text-center py-3.5 border border-gold/40 text-gold font-semibold rounded-2xl text-sm hover:bg-gold/10">
                   💝 Support the Ministry
                 </Link>
