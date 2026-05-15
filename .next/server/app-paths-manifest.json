@@ -1,7 +1,10 @@
 {
-  "/support/page": "app/support/page.js",
-  "/ministry/orphans-poor-children/page": "app/ministry/orphans-poor-children/page.js",
-  "/about/about-deva/page": "app/about/about-deva/page.js",
   "/page": "app/page.js",
+  "/api/media/route": "app/api/media/route.js",
+  "/support/page": "app/support/page.js",
+  "/media/photo-gallery/page": "app/media/photo-gallery/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/ministry/preaching-the-gospel/page": "app/ministry/preaching-the-gospel/page.js",
+  "/about/about-deva/page": "app/about/about-deva/page.js",
   "/about/board-of-directors/page": "app/about/board-of-directors/page.js"
 }

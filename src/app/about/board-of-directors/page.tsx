@@ -16,7 +16,7 @@ const directors = [
   {
     role: 'Honorary Board of Directors',
     name: 'Dr Deva & Krupa (Grace)',
-    image: '/deva.png',
+    image: '/deva1.png',
     summary:
       "Faithful ministry leaders who have served the Lord in India for 35 years through faith, sacrifice, and compassion.",
     details:
