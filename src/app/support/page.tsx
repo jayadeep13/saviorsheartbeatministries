@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, HeartHandshake, MapPinned, Plane, Radio, Sparkles } from 'lucide-react'
+import { ArrowRight, HeartHandshake, Plane, Sparkles } from 'lucide-react'
 import Reveal from '@/components/ui/Reveal'
 
 export const metadata = { title: "Support | Savior's Heartbeat Ministries" }
@@ -42,33 +42,6 @@ const supportSections = [
       ['Pastors’ Conferences', '$3,000 covers accommodation, food, and travel for 200 pastors & leaders.'],
       ['Child Sponsorship', '$50/month provides a future for a child in need. $30/month helps care for a poor and elderly widow.'],
       ['Give as Led', 'Follow the Lord’s promptings to invest in His Kingdom.'],
-    ],
-  },
-  {
-    title: 'TV Ministries',
-    eyebrow: 'Broadcast Hope',
-    icon: Radio,
-    // Changed to 1 image as requested
-    images: ['/GAL1.webp'], 
-    points: [
-      ['Broadcasting Hope', 'Reaching thousands daily from 7:00 PM - 7:30 PM on Subhavartha Channel.'],
-      ['Airwave Evangelism', 'Bringing the Word into homes across the nation.'],
-      ['Impact Through Media', 'Using technology to touch lives every morning.'],
-    ],
-  
-  },
-  {
-    title: 'Odisha Outreach',
-    eyebrow: 'State Outreach',
-    icon: MapPinned,
-    images: ['/od1.webp', '/od3.webp', '/wod1.webp', '/odr.webp'],
-    points: [
-      ['Odisha for Christ', 'Reaching the unreached in every district with the hope of Christ.'],
-      ['Mission Odisha', 'Transforming lives across the region through Gospel witness and practical care.'],
-      ['The Tribal Harvest', 'Bringing light to remote villages and marginalized tribal communities.'],
-      ['Heart for Odisha', 'A dedicated mission for total transformation through prayer, leadership, mercy, and faithful Gospel witness.'],
-      ['Pastoral Training', 'Equipping local leaders through mobile Bible training and BTCP-based teaching for long-term spiritual growth.'],
-      ['Field Care', 'Serving village families with dignity, compassion, prayer, and consistent field presence.'],
     ],
   },
 ]
@@ -128,7 +101,7 @@ export default function SupportPage() {
             Support Our Mission
           </h1>
           <p className="mx-auto max-w-2xl font-body text-lg leading-relaxed text-white/78">
-            Stand with us through prayer, missions, giving, media outreach, and Odisha field work.
+            Stand with us through prayer, mission trips, and faithful financial partnership.
           </p>
         </div>
       </section>

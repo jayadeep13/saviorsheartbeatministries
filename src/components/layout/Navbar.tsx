@@ -15,6 +15,8 @@ const nav = [
       { label: 'Helping Pastors & Building Churches', href: '/ministry/helping-pastors-building-churches', desc: 'Helping local churches thrive and expand' },
       { label: 'Orphans & Poor Children', href: '/ministry/orphans-poor-children', desc: 'Food, education, family and hope' },
       { label: 'Widows', href: '/ministry/widows', desc: 'Honor, dignity, comfort and care' },
+      { label: 'TV Ministries', href: '/ministry/tv-ministries', desc: 'Broadcasting Gospel hope through media' },
+      { label: 'Odisha Outreach', href: '/ministry/odisha-outreach', desc: 'Reaching unreached villages and tribal communities' },
       { label: 'SPANDANA Magazine', href: '/ministry/magazine', desc: 'Telugu Christian publication since 1976' },
     ]
   },
