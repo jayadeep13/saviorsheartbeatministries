@@ -1,5 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
+  "/support/page": "app/support/page.js",
+  "/ministry/orphans-poor-children/page": "app/ministry/orphans-poor-children/page.js",
+  "/about/board-of-directors/page": "app/about/board-of-directors/page.js",
   "/page": "app/page.js",
-  "/api/media/route": "app/api/media/route.js"
+  "/about/about-deva/page": "app/about/about-deva/page.js"
 }

@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/about/about-deva/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/about-deva/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,10 +11,15 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/about/board-of-directors/page": [
+    "/support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/board-of-directors/page.js"
+      "static/chunks/app/support/page.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/contact/page.js"
     ],
     "/ministry/preaching-the-gospel/page": [
       "static/chunks/webpack.js",
@@ -31,6 +36,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/ministry/helping-pastors-building-churches/page.js"
     ],
+    "/ministry/orphans-poor-children/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ministry/orphans-poor-children/page.js"
+    ],
+    "/ministry/magazine/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ministry/magazine/page.js"
+    ],
     "/ministry/widows/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -41,15 +56,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/charity/widows-care/page.js"
     ],
-    "/page": [
+    "/media/photo-gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/media/photo-gallery/page.js"
     ],
-    "/_not-found/page": [
+    "/about/about-deva/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/chunks/app/about/about-deva/page.js"
+    ],
+    "/about/board-of-directors/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/board-of-directors/page.js"
     ]
   }
 }
