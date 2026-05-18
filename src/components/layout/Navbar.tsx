@@ -67,7 +67,7 @@ export default function Navbar() {
 
         <div className="mx-auto flex w-full max-w-[118rem] items-center justify-between gap-4 px-4 sm:px-6 lg:px-7 xl:px-10 2xl:px-12">
           {/* Logo */}
-          <Link href="/" className="group flex min-w-0 shrink-0 items-center gap-3">
+          <Link href="/" className="group flex items-center gap-4">
             <div className="relative h-12 w-12 xl:h-14 xl:w-14">
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-glow transition-all duration-500 animate-pulse-glow group-hover:shadow-glow-lg xl:h-14 xl:w-14">
                 <Image
@@ -81,17 +81,21 @@ export default function Navbar() {
               </div>
               <div className="absolute -inset-0.5 rounded-full bg-gradient-to-br from-gold/30 to-primary/30 blur-sm -z-10 group-hover:blur-md transition-all duration-500" />
             </div>
-            <div className="block min-w-0">
-             <div 
-  className="text-[#B51657] font-semibold text-[17px] leading-none tracking-wide sm:text-[24px] lg:text-[15px] xl:text-base"
-  style={{ fontFamily: 'Mistral, cursive, sans-serif' }}
->
-  Savior&apos;s Heartbeat
+        <div className="block">
+  <div
+    className="text-[#B51657] font-semibold leading-none whitespace-nowrap
+    text-[18px] sm:text-[24px] lg:text-[20px] xl:text-[28px]
+    drop-shadow-[0_2px_8px_rgba(181,22,87,0.45)]"
+    style={{ fontFamily: 'Mistral, cursive, sans-serif' }}
+  >
+    Savior&apos;s Heartbeat
+  </div>
+
+  <div className="mt-1 text-[11px] sm:text-[13px] lg:text-[11px] xl:text-[13px]
+  font-sans font-medium uppercase tracking-[0.35em] text-gold">
+    Ministries
+  </div>
 </div>
-              <div className="mt-1 text-[10px] font-sans font-medium uppercase tracking-[0.2em] text-gold sm:text-[11px] sm:tracking-[0.24em] lg:text-[9px] xl:text-[10px] xl:tracking-[0.25em]">
-                Ministries
-              </div>
-            </div>
           </Link>
 
           {/* Desktop Nav */}

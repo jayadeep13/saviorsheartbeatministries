@@ -1,5 +1,6 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
   "/about/about-deva/page": "app/about/about-deva/page.js",
-  "/about/board-of-directors/page": "app/about/board-of-directors/page.js"
+  "/api/media/route": "app/api/media/route.js"
 }

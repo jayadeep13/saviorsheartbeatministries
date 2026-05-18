@@ -40,7 +40,7 @@ export default function MissionSupportPreview() {
               <div className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-white p-3 shadow-[0_26px_80px_rgba(48,35,41,0.16)]">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-[1.55rem] bg-[#12070C] md:aspect-[5/4]">
                   <Image
-                    src="/mt.webp"
+                    src="/chii.png"
                     alt="Children and ministry team praying over mission support"
                     fill
                     className="object-cover object-center"
