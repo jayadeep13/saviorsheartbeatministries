@@ -82,7 +82,7 @@ export default function AboutDevaPage() {
 
               {/* STATS GRID */}
               <div className="mt-10 grid grid-cols-3 gap-4">
-                {[{n:'50+',l:'Years of Ministry'},{n:'12',l:'Churches Built'},{n:'100+',l:'Children Cared For'}].map(s => (
+                {[{n:'40+',l:'Years of Ministry'},{n:'60+',l:'Churches Built'},{n:'700+',l:'Children Cared For'}].map(s => (
                   <div key={s.l} className="text-center p-4 bg-white rounded-2xl shadow-[0_2px_16px_rgba(0,0,0,0.06)] border border-gray-100">
                     <div className="font-display text-2xl text-crimson-500 font-semibold">{s.n}</div>
                     <div className="text-onyx-500 text-[10px] uppercase font-bold tracking-wider mt-1">{s.l}</div>

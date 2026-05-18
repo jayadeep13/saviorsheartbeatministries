@@ -4,16 +4,7 @@ import Reveal from '@/components/ui/Reveal'
 export const metadata = { title: "Board of Directors | Savior's Heartbeat Ministries" }
 
 const directors = [
-  {
-    role: 'Honorary Board of Directors',
-    name: 'Rev Jerry & Debi Ayers',
-    image: '/BOD.webp',
-    summary:
-      "Faithful honorary board members who have stood with Savior's Heartbeat Ministries through prayer, guidance, and compassionate partnership.",
-    details:
-      "In 1997, our founder, Deva, met Brother Jerry Ayers and his wife, Mrs. Debi Ayers, for the first time in the USA. This compassionate, godly couple warmly welcomed Deva, a stranger and compassionate minister from India, into their home. As the word says in Hebrews 13:1-2, keep on loving one another as brothers and sisters. Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.\n\nDuring his stay, Deva shared his vision for Savior's Heartbeat ministry and requested the Ayers' help in setting up a US-based bank account to oversee incoming offerings. First of all, they marveled at this preacher from India. He did not have shelter to stay, but he was asking to set up a bank account and oversee the ministry.\n\nWhile in their home for a couple weeks, many times Deva invited Brother Jerry to visit India and minister to the people of India. In 1999, Brother Jerry and Keith Carr answered God's call, traveling to India, where they witnessed thousands gathering to hear the good news and witnessed the spiritual hunger of the people in this country. During their visit, they blessed hundreds of widows and children, bringing joy and gratitude. They personally witnessed the compassionate ministry of Deva in India.\n\nUpon returning to the US, Brother Jerry and Sister Debi established Savior's Heartbeat USA, a registered IRS account, ensuring transparency through annual audits. They faithfully forwarded offerings to India, as instructed by Deva. Mrs. Debi Ayers, the secretary to Savior's Heartbeat in USA, sends tax-deductible receipts to donors at the end of every year.\n\nThe Savior's Heartbeat team in India extends their deepest gratitude to the Ayers for their selfless, God-inspired support. Their generosity has enabled us to provide crucial aid to the poor and needy, addressing both physical and spiritual necessities.",
-  },
-  {
+    {
     role: 'Honorary Board of Directors',
     name: 'Dr Deva & Krupa (Grace)',
     image: '/deva1.png',
@@ -22,6 +13,16 @@ const directors = [
     details:
       "Meet Pastor Deva and his wife Krupa (Grace)\n\nPastor Deva and his wife Krupa, whose name means Grace, have been faithfully serving the Lord in India for the past 35 years through a faith ministry. When they first entered the ministry, they faced many hardships, including opposition, poverty, and countless struggles. There were times when they did not even have enough food to eat. Yet, through every trial, God remained faithful and led them step by step.\n\nBy the grace of God, the same ministry that once struggled for daily food is now helping feed hundreds of children and many homeless people. Truly, God has turned their tears into testimony, and we praise Him for His faithfulness.\n\nIn 1997, as mentioned in the introduction by Jerry Ayers and Debi Ayers, God brought Pastor Deva to America. When he first arrived, he knew very little about the country and faced many challenges, especially while staying at a campground in Ashland, Virginia. Adjusting to the American lifestyle and diet was very difficult for him. But the Lord was with him through every step.\n\nOver the years, God blessed Pastor Deva with many loving friends in America who became more like family than relatives. They welcomed him into their homes, cared for him with love, fed him, and treated him as a special member of their families. Praise the Lord for such precious friendships.\n\nToday, God is doing wonderful works through Pastor Deva and the ministry in India. Thousands of people have heard the Gospel, and many pastors are faithfully ministering in villages. The ministry continues to care for hundreds of children and many homeless and needy people.\n\nBy the grace of God, Pastor Deva and the ministry have also helped build nearly 67 churches. Among them, 12 churches were built in the very difficult mission fields of Odisha, where sharing the Gospel can be extremely challenging. In addition, nearly 20 churches were built with the generous support of dear brother Dan Hiles and many other faithful friends.\n\nPraise the Lord! Hallelujah!",
   },
+  {
+    role: 'Honorary Board of Directors',
+    name: 'Rev. Jerry & Debi Ayers',
+    image: '/BOD.webp',
+    summary:
+      "Faithful honorary board members who have stood with Savior's Heartbeat Ministries through prayer, guidance, and compassionate partnership.",
+    details:
+      "In 1997, our founder, Deva, met Brother Jerry Ayers and his wife, Mrs. Debi Ayers, for the first time in the USA. This compassionate, godly couple warmly welcomed Deva, a stranger and compassionate minister from India, into their home. As the word says in Hebrews 13:1-2, keep on loving one another as brothers and sisters. Do not forget to show hospitality to strangers, for by so doing some people have shown hospitality to angels without knowing it.\n\nDuring his stay, Deva shared his vision for Savior's Heartbeat ministry and requested the Ayers' help in setting up a US-based bank account to oversee incoming offerings. First of all, they marveled at this preacher from India. He did not have shelter to stay, but he was asking to set up a bank account and oversee the ministry.\n\nWhile in their home for a couple weeks, many times Deva invited Brother Jerry to visit India and minister to the people of India. In 1999, Brother Jerry and Keith Carr answered God's call, traveling to India, where they witnessed thousands gathering to hear the good news and witnessed the spiritual hunger of the people in this country. During their visit, they blessed hundreds of widows and children, bringing joy and gratitude. They personally witnessed the compassionate ministry of Deva in India.\n\nUpon returning to the US, Brother Jerry and Sister Debi established Savior's Heartbeat USA, a registered IRS account, ensuring transparency through annual audits. They faithfully forwarded offerings to India, as instructed by Deva. Mrs. Debi Ayers, the secretary to Savior's Heartbeat in USA, sends tax-deductible receipts to donors at the end of every year.\n\nThe Savior's Heartbeat team in India extends their deepest gratitude to the Ayers for their selfless, God-inspired support. Their generosity has enabled us to provide crucial aid to the poor and needy, addressing both physical and spiritual necessities.",
+  },
+
   {
     role: 'President',
     name: 'Dr Ray & Barb Gardner',
@@ -34,7 +35,7 @@ const directors = [
   {
     role: 'Vice-President',
     name: 'Dr. Angel Joy Susan',
-    image: '/angel.png',
+    image: '/angel1.png',
     summary:
       "Serving as vice president with deep faith, medical excellence, and a lifelong commitment to healing and service.",
     details:
@@ -51,7 +52,7 @@ const directors = [
   },
   {
     role: 'Treasurer',
-    name: 'Bro Chris & Kathy Walls',
+    name: 'Rev.Chris & Kathy Walls',
     image: '/chris.png',
     summary:
       'Serving as ministry treasurer with faith, prayer, and a heart to support the work of God in India.',
@@ -70,7 +71,7 @@ const directors = [
     {
     role: 'Board Member',
     name: 'Rachael & Alen Fils',
-    image: '/Rachel.png',
+    image: '/Rachel1.png',
     summary:
       'Faithful friends and board partners known for hospitality, prayer, and deep love for the work in India.',
     details:

@@ -81,17 +81,17 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-display text-[#B51657] text-lg font-semibold leading-tight">Savior&apos;s Heartbeat</div>
-                <div className="text-[#ffff] text-xs font-sans tracking-[0.25em] uppercase">Ministries · Est. 1976</div>
+                <div className="text-[#ffff] text-xs font-sans tracking-[0.25em] uppercase">Ministries · Est. 1999</div>
               </div>
             </div>
 
             <p className="text-white/50 text-sm font-sans leading-relaxed mb-6 max-w-sm">
-              Preaching and Preparing People for HIS Coming. Serving communities across India with the transforming love of Jesus Christ since 1976.
+              Preaching and Preparing People for HIS Coming. Serving communities across India with the transforming love of Jesus Christ since 1999.
             </p>
 
             <blockquote className="border-l-2 border-gold/40 pl-4 mb-6">
               <p className="text-white/60 text-sm font-display italic leading-relaxed">
-                &ldquo;God Holy Spirit may touch you and speak to your heart to fulfill the Savior&apos;s Heartbeat.&rdquo;
+                &ldquo;May the spirit of the Lord, speak to your heart to fulfil the Savior&apos;s Heartbeat.&rdquo;
               </p>
             </blockquote>
 

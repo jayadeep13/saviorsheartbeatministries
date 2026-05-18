@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, BookOpenCheck, HeartHandshake, MapPinned, Mountain, Sprout, UsersRound } from 'lucide-react'
+import { ArrowRight, BookOpenCheck, HeartHandshake, MapPinned, Mountain, Sprout, UsersRound, Sparkles, Compass, ShieldCheck } from 'lucide-react'
 import ContactCTA from '@/components/sections/ContactCTA'
 import GalleryGroupSection from '@/components/media/GalleryGroupSection'
 import Reveal from '@/components/ui/Reveal'
@@ -10,43 +10,21 @@ export const metadata = { title: "Odisha Outreach | Savior's Heartbeat Ministrie
 
 const focusAreas = [
   {
-    title: 'Odisha for Christ',
-    text: 'A prayerful initiative to reach unreached districts with the Gospel, pastoral follow-up, and steady local care.',
-    icon: <MapPinned className="h-6 w-6" strokeWidth={1.8} />,
-  },
-  {
     title: 'The Tribal Harvest',
-    text: 'Serving marginalized tribal communities and remote villages through field visits, preaching, and practical compassion.',
-    icon: <Mountain className="h-6 w-6" strokeWidth={1.8} />,
-  },
-  {
-    title: 'Pastoral Training',
-    text: 'Equipping local leaders through mobile Bible training and BTCP-based teaching for long-term spiritual growth.',
-    icon: <BookOpenCheck className="h-6 w-6" strokeWidth={1.8} />,
+    text: 'Bringing light to remote villages and marginalized tribal communities through direct field visits, preaching, and practical compassion.',
+    icon: <Mountain className="h-6 w-6" strokeWidth={1.5} />,
   },
   {
     title: 'Heart for Odisha',
-    text: 'Carrying a dedicated burden for total transformation through prayer, leadership, mercy, and faithful Gospel witness.',
-    icon: <HeartHandshake className="h-6 w-6" strokeWidth={1.8} />,
+    text: 'A dedicated mission for total transformation through prayer, leadership, mercy, and faithful Gospel witness.',
+    icon: <HeartHandshake className="h-6 w-6" strokeWidth={1.5} />,
   },
-]
-
-const stats = [
-  { label: 'District Vision', value: 'Every', note: 'Reaching toward the whole state' },
-  { label: 'Pastors Trained', value: '1,048+', note: 'Leaders strengthened for ministry' },
-  { label: 'Mission Focus', value: 'Total', note: 'Transformation through Christ' },
-]
-
-const fieldNotes = [
-  'Village outreach among families who have limited access to regular ministry.',
-  'Pastoral teaching that strengthens local churches and future leaders.',
-  'Compassion work that meets people with dignity, prayer, and practical care.',
-  'Consistent field presence across tribal and remote communities.',
 ]
 
 export default function OdishaOutreachPage() {
   return (
-    <div>
+    <div className="bg-[#FAF8F5] antialiased overflow-hidden">
+      {/* Page Hero - Kept Exactly As It Is */}
       <PageHero
         eyebrow="Ministry"
         title="Odisha Outreach"
@@ -55,122 +33,152 @@ export default function OdishaOutreachPage() {
         imageClassName="bg-[position:center_42%]"
       />
 
-      <section className="relative overflow-hidden bg-[#FDF8F2] py-20 md:py-24">
-        <div
-          className="absolute inset-0 opacity-[0.25]"
-          style={{
-            backgroundImage: 'linear-gradient(135deg, rgba(181,22,87,0.08) 1px, transparent 1px)',
-            backgroundSize: '34px 34px',
-          }}
-        />
-        <div className="relative mx-auto max-w-6xl px-6">
-          <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-stretch">
-            <Reveal dir="left">
-              <div className="flex h-full flex-col justify-between bg-[#080405] p-7 text-white shadow-[0_24px_70px_rgba(0,0,0,0.2)] md:p-10">
-                <div>
-                  <div className="mb-8 inline-flex items-center gap-3">
-                    <span className="flex h-12 w-12 items-center justify-center bg-[#B51657] text-white shadow-[0_16px_34px_rgba(181,22,87,0.3)]">
-                      <Sprout className="h-6 w-6" strokeWidth={1.8} />
-                    </span>
-                    <div>
-                      <p className="font-accent text-[10px] font-bold uppercase tracking-[0.35em] text-[#E9A5BB]">State Outreach</p>
-                      <p className="mt-1 font-body text-sm font-semibold text-white/55">Odisha and tribal regions</p>
-                    </div>
-                  </div>
-
-                  <h2 className="font-[Playfair_Display] text-4xl font-bold leading-[1.03] md:text-6xl">
-                    A dedicated mission
-                    <span className="block italic text-[#B51657]">for total transformation.</span>
-                  </h2>
-                  <p className="mt-6 max-w-2xl font-body text-base leading-8 text-white/72 md:text-lg">
-                    Odisha Outreach carries a burden for people who have not yet heard the Gospel clearly. Beyond preaching, the ministry trains local leaders, serves tribal communities, and walks patiently with families in remote villages.
-                  </p>
+      {/* SECTION 1: Strategic Vision & Core Mission */}
+      <section className="py-24 md:py-32 relative bg-gradient-to-b from-[#FAF8F5] to-[#F5F0E6]/30 border-b border-neutral-200/50">
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#B51657]/5 blur-[130px] rounded-full pointer-events-none" />
+        
+        <div className="mx-auto max-w-6xl px-6 relative z-10">
+          <div className="grid gap-16 lg:grid-cols-12 lg:items-center">
+            
+            {/* Left Content Column */}
+            <div className="lg:col-span-7 lg:pr-6">
+              <Reveal dir="left">
+                <div className="inline-flex items-center gap-3 mb-6 bg-white border border-neutral-200/60 py-1.5 px-4 rounded-full shadow-sm">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#B51657]/10 text-[#B51657]">
+                    <Sprout className="h-3 w-3" strokeWidth={2.5} />
+                  </span>
+                  <span className="font-accent text-[10px] font-bold uppercase tracking-[0.3em] text-[#B51657]">
+                    State Outreach • 05
+                  </span>
                 </div>
 
-                <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+                <h2 className="font-[Playfair_Display] text-4xl sm:text-5xl lg:text-6xl font-medium leading-[1.15] text-[#11162E] tracking-tight">
+                  Odisha Outreach <br />
+                  <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-[#B51657] via-[#D6226E] to-[#B51657]">for total transformation.</span>
+                </h2>
+
+                <div className="mt-8 space-y-6">
+                  <div className="border-l-2 border-[#B51657] pl-5">
+                    <h4 className="font-[Playfair_Display] text-xl font-semibold text-[#11162E] mb-2 flex items-center gap-2">
+                      <MapPinned className="h-4 w-4 text-[#B51657]" /> Odisha for Christ
+                    </h4>
+                    <p className="font-body text-[15px] leading-relaxed text-[#30375F]/80">
+                      Reaching the unreached in every district with the hope of Christ through prayerful initiative, pastoral follow-up, and steady local care.
+                    </p>
+                  </div>
+
+                  <div className="border-l-2 border-neutral-300 pl-5">
+                    <h4 className="font-[Playfair_Display] text-xl font-semibold text-[#11162E] mb-2 flex items-center gap-2">
+                      <Compass className="h-4 w-4 text-[#B51657]" /> Mission Odisha
+                    </h4>
+                    <p className="font-body text-[15px] leading-relaxed text-[#30375F]/80">
+                      Transforming lives across the region through faithful Gospel witness and practical, compassionate care.
+                    </p>
+                  </div>
+                </div>
+
+                {/* PREMIUM ACTION BUTTONS - High-Contrast Thick Capsule Styling */}
+                <div className="mt-12 flex flex-col sm:flex-row items-center gap-5">
                   <Link
                     href="/support/financial-partnership"
-                    className="inline-flex items-center justify-center gap-2 bg-[#B51657] px-8 py-4 font-body text-sm font-bold text-white shadow-[0_16px_34px_rgba(181,22,87,0.28)] transition-colors hover:bg-[#9E134D]"
+                    className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-[#090A1A] px-11 py-5 font-body text-xs md:text-[13px] font-bold uppercase tracking-[0.25em] text-white shadow-[0_20px_45px_rgba(9,10,26,0.2)] transition-all duration-300 hover:shadow-[0_20px_40px_rgba(181,22,87,0.3)] hover:bg-[#B51657] hover:-translate-y-1 overflow-hidden w-full sm:w-auto min-w-[270px]"
                   >
-                    Partner With This Ministry <ArrowRight className="h-4 w-4" strokeWidth={2} />
+                    <span className="relative z-10 pl-1">Partner With Us</span> 
+                    <ArrowRight className="h-4 w-4 relative z-10 transition-transform duration-300 transform group-hover:translate-x-2" />
                   </Link>
+
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 border border-white/20 bg-white px-8 py-4 font-body text-sm font-bold text-[#1E1E22] transition-colors hover:bg-[#F7EDF1]"
+                    className="group inline-flex items-center justify-center gap-3 rounded-full bg-white border border-neutral-200/85 px-11 py-5 font-body text-xs md:text-[13px] font-bold uppercase tracking-[0.25em] text-[#090A1A] shadow-sm transition-all duration-300 hover:border-neutral-400 hover:bg-[#FAF8F5] hover:-translate-y-1 w-full sm:w-auto min-w-[240px]"
                   >
-                    Contact Ministry
+                    <span>Contact Ministry</span>
                   </Link>
                 </div>
-              </div>
-            </Reveal>
+              </Reveal>
+            </div>
 
-            <Reveal dir="right" className="h-full">
-              <div className="grid h-full gap-4">
-                <div className="relative min-h-[360px] overflow-hidden bg-[#12070C] shadow-[0_20px_58px_rgba(0,0,0,0.16)] md:min-h-[430px]">
+            {/* Right Side Visual Component: IMAGE 1 */}
+            <div className="lg:col-span-5 relative">
+              <Reveal dir="right">
+                <div className="relative aspect-video sm:aspect-[4/3] overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(17,22,46,0.06)] group">
                   <Image
-                    src="/wod1.webp"
-                    alt="Odisha outreach compassion ministry"
+                    src="/od_field_primary.webp" 
+                    alt="Odisha primary state outreach field care"
                     fill
-                    className="object-cover"
-                    style={{ objectPosition: 'center 42%' }}
-                    sizes="(min-width: 1024px) 520px, 100vw"
+                    className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                    sizes="(min-width: 1024px) 450px, 100vw"
                     priority
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
-                  <div className="absolute left-6 top-6 inline-flex items-center gap-2 bg-white px-4 py-2 font-body text-xs font-black uppercase tracking-[0.22em] text-[#B51657]">
-                    <span className="h-2 w-2 rounded-full bg-[#B51657]" />
-                    Field Care
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#11162E]/80 via-[#11162E]/20 to-transparent" />
+                  <div className="absolute top-5 left-5 inline-flex items-center gap-2 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full shadow-sm">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#B51657]" />
+                    <span className="font-accent text-[9px] font-bold uppercase tracking-widest text-[#B51657]">Field Note 01</span>
                   </div>
                   <div className="absolute bottom-6 left-6 right-6">
-                    <p className="font-accent text-[10px] font-bold uppercase tracking-[0.35em] text-white/70">Ministry Burden</p>
-                    <h3 className="mt-3 max-w-lg font-[Playfair_Display] text-4xl font-bold leading-tight text-white md:text-5xl">
-                      Gospel witness with practical love.
+                    <p className="font-accent text-[9px] font-bold uppercase tracking-[0.25em] text-white/70">State Mission</p>
+                    <h3 className="mt-1 font-[Playfair_Display] text-xl font-light text-white leading-snug">
+                      Reaching toward the absolute edge of remote districts.
                     </h3>
                   </div>
                 </div>
+              </Reveal>
+            </div>
 
-                <div className="grid gap-3">
-                  {stats.map((stat) => (
-                    <div
-                      key={stat.label}
-                      className="grid gap-3 border border-[#E8DDE2] bg-white p-5 shadow-[0_10px_30px_rgba(0,0,0,0.055)] sm:grid-cols-[0.75fr_0.65fr_1fr] sm:items-center"
-                    >
-                      <p className="font-accent text-[9px] font-bold uppercase tracking-[0.28em] text-[#B51657]">{stat.label}</p>
-                      <p className="font-[Playfair_Display] text-3xl font-bold leading-none text-[#1E1E22]">{stat.value}</p>
-                      <p className="font-body text-sm font-semibold leading-6 text-[#726870] sm:text-right">{stat.note}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </Reveal>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#070304] py-20 text-white md:py-24">
-        <div className="mx-auto max-w-6xl px-6">
-          <Reveal className="mx-auto mb-12 max-w-3xl text-center">
-            <p className="mb-4 font-accent text-[10px] font-bold uppercase tracking-[0.35em] text-[#E9A5BB]">Ministry Focus</p>
-            <h2 className="font-[Playfair_Display] text-4xl font-bold leading-[1.04] md:text-6xl">
-              Reaching Odisha with <span className="italic text-[#B51657]">Word, prayer, and care</span>
-            </h2>
-            <p className="mt-5 font-body text-base leading-8 text-white/65">
-              Each part of the outreach is built around people: families in villages, tribal communities, and local leaders who will keep serving after the visit ends.
-            </p>
-          </Reveal>
+      {/* SECTION 2: Focused Initiatives Matrix (IMAGE 2 Included) */}
+      <section className="bg-gradient-to-b from-[#111219] to-[#090A0F] py-24 md:py-32 relative text-white">
+        <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.015)_1px,transparent_1px)] [background-size:20px_20px]" />
+        
+        <div className="mx-auto max-w-6xl px-6 relative z-10">
+          <div className="grid gap-12 lg:grid-cols-12 lg:items-center mb-16">
+            <div className="lg:col-span-7">
+              <Reveal dir="left">
+                <div className="inline-flex items-center gap-2 mb-4 bg-white/[0.03] border border-white/10 py-1 px-3 rounded-full">
+                  <Sparkles className="w-3 h-3 text-amber-400" />
+                  <p className="font-accent text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-300">Outreach Spheres</p>
+                </div>
+                <h2 className="font-[Playfair_Display] text-4xl sm:text-5xl font-medium text-white tracking-tight">
+                  Bringing light to <span className="italic font-light text-[#FF4E88]">marginalized sectors</span>
+                </h2>
+              </Reveal>
+            </div>
+            
+            {/* Visual Frame Block: IMAGE 2 */}
+            <div className="lg:col-span-5 h-24 relative overflow-hidden rounded-xl border border-white/10 group">
+              <Image 
+                src="/od_tribal_banner.webp" 
+                alt="Tribal harvest village entry outreach"
+                fill
+                className="object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
+              <span className="absolute left-6 top-1/2 -translate-y-1/2 font-accent text-xs font-bold tracking-widest text-white/90 uppercase">
+                Active Field Ministry Presence
+              </span>
+            </div>
+          </div>
 
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2">
             {focusAreas.map((item, index) => (
-              <Reveal key={item.title} delay={index * 80}>
-                <article className="h-full border border-white/10 bg-white/[0.04] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.22)] transition-colors hover:border-[#B51657]/60">
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center bg-[#B51657] p-3 text-white">
-                    {item.icon}
+              <Reveal key={item.title} delay={index * 120}>
+                <article className="group h-full relative overflow-hidden rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 pt-14 transition-all duration-500 hover:border-[#B51657]/40 flex flex-col justify-between">
+                  <span className="absolute top-6 right-6 font-[Playfair_Display] text-4xl font-extralight text-neutral-800/40 select-none group-hover:text-[#B51657]/20 transition-colors duration-500">
+                    0{index + 1}
+                  </span>
+                  <div>
+                    <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#B51657] to-[#D6226E] text-white">
+                      {item.icon}
+                    </div>
+                    <h3 className="font-[Playfair_Display] text-2xl font-medium text-white group-hover:text-[#FF4E88] transition-colors duration-300 mb-3">
+                      {item.title}
+                    </h3>
+                    <p className="font-body text-[14px] leading-relaxed text-neutral-400 font-light">
+                      {item.text}
+                    </p>
                   </div>
-                  <p className="mb-3 font-[Playfair_Display] text-3xl font-bold leading-none text-[#B51657]">
-                    {String(index + 1).padStart(2, '0')}
-                  </p>
-                  <h3 className="font-[Playfair_Display] text-2xl font-bold leading-tight text-white">{item.title}</h3>
-                  <p className="mt-4 font-body text-sm leading-7 text-white/65">{item.text}</p>
                 </article>
               </Reveal>
             ))}
@@ -178,72 +186,100 @@ export default function OdishaOutreachPage() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#FDF8F2] py-20 md:py-24">
-        <div
-          className="absolute inset-0 opacity-[0.28]"
-          style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(181,22,87,0.12) 1px, transparent 0)',
-            backgroundSize: '28px 28px',
-          }}
-        />
-        <div className="relative mx-auto max-w-6xl px-6">
+      {/* SECTION 3: Sustainable Training & Care Panels (IMAGE 3 Included) */}
+      <section className="py-24 md:py-32 relative bg-gradient-to-b from-[#F9F7F3] to-[#FAF8F5]">
+        <div className="mx-auto max-w-6xl px-6">
           <Reveal>
-            <article className="grid overflow-hidden bg-white shadow-[0_20px_58px_rgba(0,0,0,0.12)] lg:grid-cols-[1fr_1fr]">
-              <div className="relative min-h-[360px] bg-[#12070C] lg:min-h-[610px]">
+            <div className="grid overflow-hidden rounded-3xl border border-neutral-200/70 bg-white shadow-[0_30px_80px_rgba(17,22,46,0.04)] lg:grid-cols-12 lg:items-stretch">
+              
+              {/* Left Canvas: IMAGE 3 */}
+              <div className="relative min-h-[400px] lg:col-span-5 bg-[#12070C] overflow-hidden group">
                 <Image
-                  src="/od3.webp"
-                  alt="Odisha outreach relief and village ministry"
+                  src="/od_pastor_training.webp" 
+                  alt="Pastoral training and leadership classes"
                   fill
-                  className="object-cover"
-                  style={{ objectPosition: 'center center' }}
-                  sizes="(min-width: 1024px) 560px, 100vw"
+                  className="object-cover transition-transform duration-[1.2s] group-hover:scale-[1.03]"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/5 to-transparent" />
-                <div className="absolute bottom-6 left-6 right-6">
-                  <UsersRound className="mb-4 h-12 w-12 text-white" strokeWidth={1.5} />
-                  <h3 className="max-w-xl font-[Playfair_Display] text-4xl font-bold leading-tight text-white md:text-5xl">
-                    Strong local leaders help the Gospel remain.
+                <div className="absolute inset-0 bg-gradient-to-t from-[#11162E]/90 via-[#11162E]/30 to-transparent" />
+                <div className="absolute bottom-10 left-10 right-10">
+                  <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-white/10 backdrop-blur-md border border-white/20 mb-5">
+                    <UsersRound className="h-5 w-5 text-white" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="font-[Playfair_Display] text-3xl font-light text-white leading-tight tracking-tight">
+                    Equipping local shepherding structures.
                   </h3>
                 </div>
               </div>
 
-              <div className="border-l-[6px] border-[#B51657] bg-white p-7 md:p-10 lg:flex lg:flex-col lg:justify-center">
-                <div className="mb-7 flex h-16 w-16 items-center justify-center bg-[#B51657] text-white shadow-[0_16px_34px_rgba(181,22,87,0.22)]">
-                  <BookOpenCheck className="h-8 w-8" strokeWidth={1.8} />
+              {/* Right Side Content Matter Panels */}
+              <div className="lg:col-span-7 bg-white p-8 md:p-14 flex flex-col justify-center">
+                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#B51657]/5 border border-[#B51657]/10 text-[#B51657]">
+                  <BookOpenCheck className="h-5 w-5" strokeWidth={1.8} />
                 </div>
-                <p className="mb-4 font-accent text-[10px] font-bold uppercase tracking-[0.35em] text-[#B51657]">From Outreach To Growth</p>
-                <h2 className="font-[Playfair_Display] text-4xl font-bold leading-[1.04] text-[#1E1E22] md:text-6xl">
-                  Training leaders for <span className="italic text-[#B51657]">lasting fruit.</span>
+                
+                <p className="mb-3 font-accent text-[10px] font-bold uppercase tracking-[0.3em] text-[#B51657]">Long-Term Foundations</p>
+                <h2 className="font-[Playfair_Display] text-3xl sm:text-4xl font-medium leading-tight text-[#11162E] tracking-tight">
+                  Sustainable focus and <span className="italic text-[#B51657] font-light">practical care tracks.</span>
                 </h2>
-                <p className="mt-6 font-body text-base leading-8 text-[#625B61] md:text-lg">
-                  The goal is not only a meeting, but a growing witness. Through mobile theological education and pastoral training, local ministers are prepared to shepherd people with biblical clarity and compassion.
-                </p>
 
-                <div className="mt-8 grid gap-3">
-                  {fieldNotes.map((note, index) => (
-                    <div key={note} className="flex gap-4 border border-[#E8DDE2] bg-[#FDF8F2] p-4">
-                      <span className="flex h-8 w-8 shrink-0 items-center justify-center bg-[#B51657] font-[Playfair_Display] text-sm font-bold text-white">
-                        {index + 1}
-                      </span>
-                      <p className="font-body text-sm font-semibold leading-6 text-[#4F484E]">{note}</p>
-                    </div>
-                  ))}
+                <div className="mt-10 space-y-6">
+                  {/* Matter Block: Pastoral Training */}
+                  <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-neutral-200/50">
+                    <h4 className="font-[Playfair_Display] text-xl font-semibold text-[#11162E] mb-2">Pastoral Training</h4>
+                    <p className="font-body text-[14px] leading-relaxed text-neutral-600 font-normal">
+                      Equipping local leaders through structural mobile Bible training networks and intensive BTCP-based teaching methodologies for permanent, generational spiritual growth.
+                    </p>
+                  </div>
+
+                  {/* Matter Block: Field Care */}
+                  <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-neutral-200/50">
+                    <h4 className="font-[Playfair_Display] text-xl font-semibold text-[#11162E] mb-2">Field Care</h4>
+                    <p className="font-body text-[14px] leading-relaxed text-neutral-600 font-normal">
+                      Serving remote village families with uncompromising dignity, personal compassion, structured prayer support networks, and a regular, consistent missionary field presence.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </article>
+
+            </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* SECTION 4: High-Impact Image Break Block: IMAGE 4 */}
+      <section className="py-12 bg-white border-y border-neutral-200/60">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="relative h-64 md:h-80 overflow-hidden rounded-2xl group shadow-inner">
+            <Image 
+              src="/od_field_landscape.webp" 
+              alt="Odisha panoramic wide field action display" 
+              fill 
+              className="object-cover transition-transform duration-[2s] group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-[#11162E]/30 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+            <div className="absolute bottom-8 left-8 right-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <p className="font-accent text-[9px] font-bold uppercase tracking-[0.3em] text-[#FF8EA7] mb-1">Outreach Continuity</p>
+                <p className="font-[Playfair_Display] text-2xl md:text-3xl text-white font-light tracking-tight">Walking patiently with families down every village trail.</p>
+              </div>
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-2 text-white font-accent text-[10px] tracking-widest uppercase font-bold">
+                <ShieldCheck className="h-3.5 w-3.5 text-amber-400" /> Accountable Field Infrastructure
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <GalleryGroupSection
         group="odisha-state-outreach"
-        eyebrow="Odisha State Outreach"
-        title="Gallery From The Field"
-        subtitle="Photos uploaded in the Odisha State Outreach gallery are shown here automatically."
+        eyebrow="Odisha Outreach Gallery"
+        title="Odisha Outreach Moments"
+        subtitle="Photos from Odisha outreach will appear here from the Odisha State Outreach gallery."
         showImageTitles={false}
       />
 
-      <ContactCTA />
+   
     </div>
   )
 }

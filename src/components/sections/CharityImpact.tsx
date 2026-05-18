@@ -16,14 +16,14 @@ export default function CharityImpact() {
             <SectionLabel text="Charity & Impact" />
 
             <h2 className="mt-5 font-display text-5xl font-medium leading-[0.98] tracking-[-0.045em] text-[#1B1B1D] md:text-6xl lg:text-7xl">
-              Changing Lives,
+              Compassion in Action,
               <span className="mt-3 block font-semibold italic tracking-[-0.035em] text-[#B51657]">
-                One Soul at a Time
+                Hope for Every Home
               </span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-2xl font-body text-lg leading-8 text-[#1B1B1D]/70">
-              Through love, action, and unwavering faith, we bring hope and dignity to the most vulnerable.
+              Through faithful giving and hands-on care, we serve children, widows, families, and village communities with dignity.
             </p>
           </div>
         </Reveal>

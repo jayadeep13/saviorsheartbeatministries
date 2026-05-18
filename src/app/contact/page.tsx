@@ -5,8 +5,8 @@ import Reveal from '@/components/ui/Reveal'
 
 const contactCards = [
   { icon: 'phone', title: 'Mobile Call', line1: '304 620 1974', line2: 'Available 24/7 for Prayer', href: 'tel:3046201974' },
-  { icon: 'whatsapp', title: 'WhatsApp Chat', line1: '+91 7399577999', line2: 'Reach Pastor Deva on WhatsApp for Calls Across India', href: 'https://wa.me/917399577999' },
-  { icon: 'mail', title: 'Email Support', line1: 'infosaviorsheartbeat@gmail.com', line2: 'Responds shortly', href: 'mailto:infosaviorsheartbeat@gmail.com' },
+  { icon: 'whatsapp', title: 'WhatsApp Chat', line1: '+91 7399577999', line2: 'having whatsapp on your phone you can reach Pastor Deva with local call', href: 'https://wa.me/917399577999' },
+  { icon: 'mail', title: 'Email Support', line1: 'saviorsheartbeat777@aol.com', line2: 'Deep, we could not get infosaviorsheartbeat@gmail.com if you can try please try for me', href: 'mailto:saviorsheartbeat777@aol.com' },
 ]
 
 function Icon({ name, className = 'w-5 h-5' }: { name: string; className?: string }) {

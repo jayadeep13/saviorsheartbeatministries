@@ -2,9 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Camera } from 'lucide-react'
 import Reveal from '../ui/Reveal'
-import SectionLabel from '../ui/SectionLabel'
 
 type GalleryItem = {
   id: string
@@ -15,21 +14,17 @@ type GalleryItem = {
 
 const fallbackItems: GalleryItem[] = [
   { id: 'children', title: 'Children Ministry', src: '/children.webp', galleryGroup: 'children' },
-  { id: 'family', title: 'Family Care', src: '/family.webp', galleryGroup: 'children' },
+  { id: 'odisha', title: 'Odisha Outreach', src: '/od1.webp', galleryGroup: 'odisha-state-outreach' },
   { id: 'widows', title: 'Widows Care', src: '/WID1.webp', galleryGroup: 'widows' },
-  { id: 'outreach', title: 'Gospel Outreach', src: '/up.webp', galleryGroup: 'others' },
+  { id: 'preaching', title: 'Gospel Outreach', src: '/pre.webp', galleryGroup: 'others' },
+  { id: 'pastors', title: "Pastors' Conference", src: '/past.webp', galleryGroup: 'with-pastors' },
+  { id: 'church', title: 'Church Ministry', src: '/church.webp', galleryGroup: 'others' },
+  { id: 'food', title: 'Food Ministry', src: '/food.webp', galleryGroup: 'children' },
+  { id: 'field', title: 'Field Outreach', src: '/out (1).webp', galleryGroup: 'others' },
+  { id: 'media', title: 'Media Ministry', src: '/GAL1.webp', galleryGroup: 'others' },
 ]
 
-const spanClasses = [
-  'md:col-span-2 md:row-span-2',
-  'md:col-span-1',
-  'md:col-span-1',
-  'md:col-span-1',
-  'md:col-span-2',
-  'md:col-span-1',
-]
-
-const groupOrder = ['children', 'with-pastors', 'odisha-state-outreach', 'widows', 'others']
+const groupOrder = ['children', 'odisha-state-outreach', 'widows', 'with-pastors', 'others']
 
 export default function GalleryPreview() {
   const [galleryItems, setGalleryItems] = useState<GalleryItem[]>([])
@@ -56,68 +51,78 @@ export default function GalleryPreview() {
     const picked: GalleryItem[] = []
 
     groupOrder.forEach((group) => {
-      const match = uploadedItems.find((item) => item.galleryGroup === group && !picked.some((pickedItem) => pickedItem.id === item.id))
+      const match = uploadedItems.find(
+        (item) => item.galleryGroup === group && !picked.some((pickedItem) => pickedItem.id === item.id),
+      )
       if (match) picked.push(match)
     })
 
     uploadedItems.forEach((item) => {
-      if (picked.length < 6 && !picked.some((pickedItem) => pickedItem.id === item.id)) picked.push(item)
+      if (picked.length < 9 && !picked.some((pickedItem) => pickedItem.id === item.id)) picked.push(item)
     })
 
-    const uploaded = picked.slice(0, 6)
-    return uploaded.length ? uploaded : fallbackItems
+    return picked.length ? picked.slice(0, 9) : fallbackItems
   }, [galleryItems])
 
   return (
-    <section className="relative overflow-hidden bg-[#FCFAF7] pb-16 pt-28">
-      <div
-        className="absolute inset-0 opacity-[0.45]"
-        style={{ backgroundImage: 'radial-gradient(circle at 2px 2px,rgba(139,26,74,0.12) 1px,transparent 0)', backgroundSize: '28px 28px' }}
-      />
+    <section className="relative overflow-hidden bg-[#FCFBF7] py-20 md:py-24">
+      <div className="absolute inset-0 opacity-[0.35] [background-image:radial-gradient(circle_at_2px_2px,rgba(181,22,87,0.12)_1px,transparent_0)] [background-size:28px_28px]" />
+      <div className="absolute left-[-10%] top-16 h-80 w-80 rounded-full bg-[#B51657]/8 blur-[100px]" />
+      <div className="absolute bottom-0 right-[-10%] h-96 w-96 rounded-full bg-[#C9A96E]/12 blur-[110px]" />
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <div className="relative mx-auto max-w-7xl px-6">
         <Reveal>
-          <div className="text-center mb-16">
-            <SectionLabel text="Media Gallery" />
-            <h2 className="font-[Playfair_Display] text-5xl md:text-6xl lg:text-7xl font-bold text-onyx-900 leading-[0.98] mb-5">
-              God&apos;s Work
-              <span className="block font-[Playfair_Display] text-[0.92em] font-bold italic text-[#B51657]">
-                in Pictures
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <div className="mb-4 inline-flex items-center gap-3 rounded-full border border-[#E8DDE2] bg-white px-5 py-2 shadow-[0_8px_28px_rgba(0,0,0,0.04)]">
+              <Camera className="h-4 w-4 text-[#B51657]" />
+              <span className="font-accent text-[10px] font-bold uppercase tracking-[0.32em] text-[#B51657]">
+                Our Gallery
               </span>
+            </div>
+            <h2 className="font-heading text-4xl font-semibold leading-tight text-[#1E1E22] md:text-5xl">
+              Ministry Moments
             </h2>
-            <p className="text-onyx-600 max-w-2xl mx-auto font-body text-lg leading-relaxed">
-              A glimpse of the ministry gallery: outreach, children, pastors, widows, and moments of grace from the field.
+            <p className="mx-auto mt-4 max-w-2xl font-body text-base leading-8 text-[#625B61] md:text-lg">
+              A simple glimpse of outreach, care, and Gospel work from the field.
             </p>
           </div>
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-3 gap-4 md:h-[540px] mb-14">
+          <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
             {items.map((item, index) => (
               <Link
                 key={item.id}
                 href="/media/photo-gallery"
-                className={`${spanClasses[index] || ''} group relative min-h-[220px] overflow-hidden rounded-2xl border border-black/5 bg-white shadow-[0_14px_40px_rgba(0,0,0,0.12)]`}
+                className="group mb-5 block break-inside-avoid overflow-hidden rounded-[1.45rem] border border-[#EFE4E9] bg-white p-2 shadow-[0_16px_46px_rgba(0,0,0,0.075)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_62px_rgba(181,22,87,0.13)]"
               >
-                {item.src && (
-                  <img
-                    src={item.src}
-                    alt={item.title}
-                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                )}
+                <div
+                  className={`relative overflow-hidden rounded-[1rem] bg-[#12070C] ${
+                    index % 5 === 2 ? 'aspect-[4/5]' : index % 4 === 1 ? 'aspect-[16/10]' : 'aspect-[4/3]'
+                  }`}
+                >
+                  {item.src && (
+                    <img
+                      src={item.src}
+                      alt={item.title}
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  )}
+                  <div className="absolute inset-0 bg-black/0 transition-colors duration-300 group-hover:bg-black/10" />
+                </div>
               </Link>
             ))}
           </div>
         </Reveal>
 
-        <Reveal delay={300}>
-          <div className="text-center">
+        <Reveal delay={220}>
+          <div className="mt-12 text-center">
             <Link
               href="/media/photo-gallery"
-              className="inline-flex items-center gap-2 rounded-full border border-[#B51657]/35 bg-white px-8 py-4 font-body text-sm font-semibold text-[#B51657] shadow-[0_14px_34px_rgba(0,0,0,0.08)] transition-all hover:border-[#B51657]/70 hover:bg-[#B51657]/5"
+              className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border border-[#B51657]/35 bg-white px-9 font-body text-sm font-bold text-[#B51657] shadow-[0_14px_34px_rgba(0,0,0,0.06)] transition-all hover:-translate-y-1 hover:border-[#B51657]/70 hover:bg-[#FDF2F7]"
             >
-              View Full Gallery <ArrowRight className="h-4 w-4" />
+              View Full Gallery
+              <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </Reveal>
