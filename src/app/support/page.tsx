@@ -19,7 +19,7 @@ const supportSections = [
       ['Daily Devotion', 'Pray for protection, wisdom, and open hearts in the field.'],
       ['A Faithful Foundation', 'Join our prayer team to cover every mission in grace.'],
     ],
-    cta: { label: 'Send Prayer Request', href: '/ministry/prayer-request' },
+  
   },
   {
     title: 'Take a Mission Trip to India',
@@ -151,17 +151,7 @@ export default function SupportPage() {
                         ))}
                       </div>
 
-                      {section.cta && (
-                        <Link
-                          href={section.cta.href}
-                          target={section.cta.href.startsWith('http') ? '_blank' : undefined}
-                          rel={section.cta.href.startsWith('http') ? 'noreferrer' : undefined}
-                          className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#B51657] px-7 py-3.5 font-body text-sm font-bold text-white shadow-[0_16px_34px_rgba(181,22,87,0.22)] transition-all hover:-translate-y-0.5 hover:bg-[#8B0A35]"
-                        >
-                          {section.cta.label}
-                          <ArrowRight className="h-4 w-4" />
-                        </Link>
-                      )}
+                 
                     </div>
                   </article>
                 </Reveal>

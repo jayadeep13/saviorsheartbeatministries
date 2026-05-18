@@ -52,7 +52,7 @@ const directors = [
   },
   {
     role: 'Treasurer',
-    name: 'Rev.Chris & Kathy Walls',
+    name: 'Rev. Chris & Kathy Walls',
     image: '/chris.png',
     summary:
       'Serving as ministry treasurer with faith, prayer, and a heart to support the work of God in India.',
@@ -71,7 +71,7 @@ const directors = [
     {
     role: 'Board Member',
     name: 'Rachael & Alen Fils',
-    image: '/Rachel1.png',
+    image: '/rachel1.png',
     summary:
       'Faithful friends and board partners known for hospitality, prayer, and deep love for the work in India.',
     details:
@@ -80,7 +80,7 @@ const directors = [
   {
     role: 'Board Member',
     name: 'Sister Maggie Griffen',
-    image: '/jef.png',
+    image: '/ra2.png',
     summary:
       'A dedicated board member whose love for India has opened Kingdom connections and encouraged many lives.',
     details:
