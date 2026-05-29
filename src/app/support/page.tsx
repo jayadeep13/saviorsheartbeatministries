@@ -27,7 +27,7 @@ const supportSections = [
     icon: Plane,
     images: [
       { src: '/mt.webp', pos: 'center center' },
-      { src: '/out (1).webp', pos: 'center center' },
+      { src: '/mis.jpg', pos: 'center center' },
     ] as SupportImage[],
     points: [
       ['Preach the Gospel', 'Share the message of Christ in unreached areas.'],
