@@ -5,7 +5,7 @@ export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
 const categories = new Set(['gallery', 'books'])
-const galleryGroups = new Set(['odisha-state-outreach', 'children', 'with-pastors', 'widows', 'others'])
+const galleryGroups = new Set(['crusades', 'church-building', 'children', 'widows', 'homeless-outreach', 'others'])
 
 function parseCategory(value: FormDataEntryValue | string | null): MediaCategory | undefined {
   if (typeof value !== 'string' || !categories.has(value)) return undefined

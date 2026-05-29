@@ -1,21 +1,19 @@
 import Hero from '@/components/sections/Hero'
 import AboutPreview from '@/components/sections/AboutPreview'
-import MinistryHighlights from '@/components/sections/MinistryHighlights'
-import CharityImpact from '@/components/sections/CharityImpact'
-import GalleryPreview from '@/components/sections/GalleryPreview'
+import HeartbeatFocus from '@/components/sections/HeartbeatFocus'
+import FaithfulnessStats from '@/components/sections/FaithfulnessStats'
 import MissionSupportPreview from '@/components/sections/MissionSupportPreview'
-import ContactCTA from '@/components/sections/ContactCTA'
+import PrayerBlessing from '@/components/sections/PrayerBlessing'
 
 export default function HomePage() {
   return (
     <>
       <Hero />
       <AboutPreview />
-      <MinistryHighlights />
-      <CharityImpact />
+      <HeartbeatFocus />
+      <FaithfulnessStats />
       <MissionSupportPreview />
-      <GalleryPreview />
-      <ContactCTA />
+      <PrayerBlessing />
     </>
   )
 }

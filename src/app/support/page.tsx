@@ -5,27 +5,30 @@ import Reveal from '@/components/ui/Reveal'
 
 export const metadata = { title: "Support | Savior's Heartbeat Ministries" }
 
-const heroImages = ['/pras.webp','/mt.webp']
+const heroImages = ['/pras.webp', '/mt.webp']
+
+type SupportImage = { src: string; pos?: string }
 
 const supportSections = [
   {
     title: 'Prayer Support',
     eyebrow: 'Intercession',
     icon: HeartHandshake,
-    // Changed to 1 image as requested
-    images: ['/bhu.png'], 
+    images: [{ src: '/bhu.png', pos: 'center center' }] as SupportImage[],
     points: [
       ['The Power of Prayer', 'Stand with us in spiritual warfare and intercession.'],
       ['Daily Devotion', 'Pray for protection, wisdom, and open hearts in the field.'],
       ['A Faithful Foundation', 'Join our prayer team to cover every mission in grace.'],
     ],
-  
   },
   {
     title: 'Take a Mission Trip to India',
     eyebrow: 'Go & Serve',
     icon: Plane,
-    images: ['/mt.webp', '/out (1).webp'],
+    images: [
+      { src: '/mt.webp', pos: 'center center' },
+      { src: '/out (1).webp', pos: 'center center' },
+    ] as SupportImage[],
     points: [
       ['Preach the Gospel', 'Share the message of Christ in unreached areas.'],
       ['Teach the Leaders', 'Pour your wisdom into local pastors and shepherds.'],
@@ -36,21 +39,30 @@ const supportSections = [
     title: 'Financial Partnership',
     eyebrow: 'Give as Led',
     icon: Sparkles,
-    images: ['/chiii.png', '/children.webp'],
+    images: [
+      { src: '/crusades (1).jpg', pos: 'center 20%' },
+      { src: '/crusades (2).jpg', pos: 'center 30%' },
+    ] as SupportImage[],
     points: [
       ['Crusade Sponsorship', '$5,000 reaches gatherings of 2,000-3,000 people.'],
-      ['Pastors’ Conferences', '$3,000 covers accommodation, food, and travel for 200 pastors & leaders.'],
+      ["Pastors' Conferences", '$3,000 covers accommodation, food, and travel for 200 pastors & leaders.'],
       ['Child Sponsorship', '$50/month provides a future for a child in need. $30/month helps care for a poor and elderly widow.'],
-      ['Give as Led', 'Follow the Lord’s promptings to invest in His Kingdom.'],
+      ['Give as Led', "Follow the Lord's promptings to invest in His Kingdom."],
     ],
   },
 ]
 
-function SupportImages({ images, title }: { images: string[]; title: string }) {
+function SupportImages({ images, title }: { images: SupportImage[]; title: string }) {
   if (images.length === 1) {
     return (
       <div className="support-feature-image relative aspect-[16/11] w-full overflow-hidden rounded-3xl bg-[#12070c] shadow-[0_28px_80px_rgba(0,0,0,0.18)] md:aspect-[16/10] lg:aspect-[4/3]">
-        <Image src={images[0]} alt={`${title} ministry image`} fill className="object-cover object-center" />
+        <Image
+          src={images[0].src}
+          alt={`${title} ministry image`}
+          fill
+          className="object-cover"
+          style={{ objectPosition: images[0].pos ?? 'center center' }}
+        />
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
       </div>
     )
@@ -60,10 +72,16 @@ function SupportImages({ images, title }: { images: string[]; title: string }) {
     <div className="grid w-full grid-cols-2 gap-5 md:gap-6">
       {images.map((image) => (
         <div
-          key={image}
+          key={image.src}
           className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-[#12070c] shadow-[0_24px_70px_rgba(0,0,0,0.16)]"
         >
-          <Image src={image} alt={`${title} ministry image`} fill className="object-cover object-center" />
+          <Image
+            src={image.src}
+            alt={`${title} ministry image`}
+            fill
+            className="object-cover"
+            style={{ objectPosition: image.pos ?? 'center center' }}
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
         </div>
       ))}
@@ -120,12 +138,10 @@ export default function SupportPage() {
               return (
                 <Reveal key={section.title} dir="up">
                   <article className="grid items-center gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:gap-14 xl:grid-cols-[1.16fr_0.84fr]">
-                    {/* Image Column */}
                     <div className={reversed ? 'lg:order-2' : ''}>
                       <SupportImages images={section.images} title={section.title} />
                     </div>
 
-                    {/* Text Details Column */}
                     <div className={reversed ? 'lg:order-1' : ''}>
                       <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#B51657] text-white shadow-[0_12px_24px_rgba(181,22,87,0.18)]">
                         <Icon className="h-5 w-5" />
@@ -136,8 +152,7 @@ export default function SupportPage() {
                       <h2 className="mb-8 font-heading text-3xl font-semibold leading-tight text-[#1E1E22] md:text-4xl">
                         {index + 1}. {section.title}
                       </h2>
-                      
-                      {/* Cleaner Text List Format without rigid boxes */}
+
                       <div className="space-y-6 border-l-2 border-gray-100 pl-5">
                         {section.points.map(([heading, text]) => (
                           <div key={heading} className="group">
@@ -150,8 +165,6 @@ export default function SupportPage() {
                           </div>
                         ))}
                       </div>
-
-                 
                     </div>
                   </article>
                 </Reveal>

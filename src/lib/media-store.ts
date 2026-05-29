@@ -4,7 +4,7 @@ import crypto from 'crypto'
 import sharp from 'sharp'
 
 export type MediaCategory = 'gallery' | 'books'
-export type GalleryGroup = 'odisha-state-outreach' | 'children' | 'with-pastors' | 'widows' | 'others'
+export type GalleryGroup = 'crusades' | 'church-building' | 'children' | 'widows' | 'homeless-outreach' | 'others'
 
 export type MediaItem = {
   id: string

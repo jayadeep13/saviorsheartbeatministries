@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 
 type MediaCategory = 'gallery' | 'books'
-type GalleryFilter = 'all' | 'odisha-state-outreach' | 'children' | 'with-pastors' | 'widows' | 'others'
+type GalleryFilter = 'all' | 'crusades' | 'church-building' | 'children' | 'widows' | 'homeless-outreach' | 'others'
 
 type MediaItem = {
   id: string
@@ -17,12 +17,15 @@ type MediaItem = {
 const PAGE_SIZE = 20
 const galleryFilters: { id: GalleryFilter; label: string; icon: string }[] = [
   { id: 'all', label: 'All', icon: '*' },
-  { id: 'odisha-state-outreach', label: 'Odisha State Outreach', icon: 'O' },
-  { id: 'children', label: 'Children', icon: 'C' },
-  { id: 'with-pastors', label: 'With Pastors', icon: 'P' },
+  { id: 'crusades', label: 'Crusades', icon: 'C' },
+  { id: 'church-building', label: 'Church Building', icon: 'B' },
+  { id: 'children', label: 'Children', icon: 'K' },
   { id: 'widows', label: 'Widows', icon: 'W' },
+  { id: 'homeless-outreach', label: 'Homeless Outreach', icon: 'H' },
   { id: 'others', label: 'Others', icon: '+' },
 ]
+
+const currentGroupIds = new Set(['crusades', 'church-building', 'children', 'widows', 'homeless-outreach', 'others'])
 
 function Pagination({ page, totalPages, onPage }: { page: number; totalPages: number; onPage: (page: number) => void }) {
   if (totalPages <= 1) return null
@@ -111,12 +114,13 @@ export default function MediaShowcase({ category }: { category: MediaCategory })
     }
   }, [category])
 
-  const filteredItems = useMemo(
-    () => category === 'gallery' && activeFilter !== 'all'
-      ? items.filter((item) => item.galleryGroup === activeFilter)
-      : items,
-    [activeFilter, category, items]
-  )
+  const filteredItems = useMemo(() => {
+    if (category !== 'gallery' || activeFilter === 'all') return items
+    if (activeFilter === 'others') {
+      return items.filter((item) => !item.galleryGroup || !currentGroupIds.has(item.galleryGroup) || item.galleryGroup === 'others')
+    }
+    return items.filter((item) => item.galleryGroup === activeFilter)
+  }, [activeFilter, category, items])
   const totalPages = Math.max(1, Math.ceil(filteredItems.length / PAGE_SIZE))
   const visibleItems = useMemo(() => filteredItems.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE), [filteredItems, page])
 

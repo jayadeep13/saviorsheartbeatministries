@@ -29,7 +29,7 @@ export default function PastorsConferencesPage() {
         eyebrow="Our Ministries"
         title="Conducting Pastors' Conferences"
         subtitle="Training shepherds, renewing leaders, and strengthening those who serve."
-        imageSrc="/ggg.webp"
+        imageSrc="/pas31.jpg"
         imageClassName="bg-[position:center_26%] sm:bg-[position:center_32%] lg:bg-[position:center_38%]"
       />
 
@@ -40,7 +40,7 @@ export default function PastorsConferencesPage() {
             <Reveal dir="left">
               <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-sm">
                 <Image
-                  src="/pastcopy.webp"
+                  src="/pas.jpg"
                   alt="Pastors conference leadership training"
                   fill
                   className="object-cover object-[center_30%]"
@@ -156,7 +156,7 @@ export default function PastorsConferencesPage() {
             <Reveal dir="right" className="order-1 lg:order-2">
               <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl">
                 <Image
-                  src="/passs.webp"
+                  src="/pas1.jpg"
                   alt="Pastors gathered"
                   fill
                   className="object-cover"

@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useState } from 'react'
 
 type MediaCategory = 'gallery' | 'books'
-type GalleryGroup = 'odisha-state-outreach' | 'children' | 'with-pastors' | 'widows' | 'others'
+type GalleryGroup = 'crusades' | 'church-building' | 'children' | 'widows' | 'homeless-outreach' | 'others'
 
 type MediaItem = {
   id: string
@@ -20,16 +20,17 @@ const tabs: { id: MediaCategory; label: string; help: string }[] = [
 ]
 
 const galleryGroups: { id: GalleryGroup; label: string }[] = [
-  { id: 'odisha-state-outreach', label: 'Odisha State Outreach' },
+  { id: 'crusades', label: 'Crusades' },
+  { id: 'church-building', label: 'Church Building' },
   { id: 'children', label: 'Children' },
-  { id: 'with-pastors', label: 'With Pastors' },
   { id: 'widows', label: 'Widows' },
+  { id: 'homeless-outreach', label: 'Homeless Outreach' },
   { id: 'others', label: 'Others' },
 ]
 
 export default function AdminPannelPage() {
   const [category, setCategory] = useState<MediaCategory>('gallery')
-  const [galleryGroup, setGalleryGroup] = useState<GalleryGroup>('odisha-state-outreach')
+  const [galleryGroup, setGalleryGroup] = useState<GalleryGroup>('crusades')
   const [title, setTitle] = useState('')
   const [file, setFile] = useState<File | null>(null)
   const [items, setItems] = useState<MediaItem[]>([])

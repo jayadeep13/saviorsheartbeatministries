@@ -81,7 +81,7 @@ export default function PreachingTheGospelPage() {
                   
                   <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-[0_20px_50px_rgba(17,22,46,0.08)] transition-transform duration-700 group-hover:scale-[1.01]">
                     <Image
-                      src="/pre.webp"
+                      src="/prcg.png"
                       alt="Preaching the Gospel outreach"
                       fill
                       className="object-cover transition-transform duration-1000 group-hover:scale-105"
