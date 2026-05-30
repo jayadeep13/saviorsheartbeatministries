@@ -216,7 +216,7 @@ export default function AboutDevaPage() {
           <Reveal dir="up" className="overflow-hidden bg-white shadow-[0_32px_70px_rgba(0,0,0,0.06)] rounded-[2.5rem] border border-stone-100">
             <div className="overflow-hidden bg-stone-50 relative aspect-[3/2] max-h-[600px] w-full">
               <Image
-                src="/family1.webp"
+                src="/fami.jpeg"
                 fill
                 className="object-cover object-center"
                 alt="The Dandala Family"
