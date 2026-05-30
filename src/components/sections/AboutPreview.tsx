@@ -21,7 +21,7 @@ export default function AboutPreview() {
             <div className="relative flex justify-center lg:justify-start">
               <div className="relative aspect-[3/4] w-full max-w-md overflow-hidden rounded-[2rem] bg-onyx-100 shadow-[0_32px_80px_rgba(0,0,0,0.18)] lg:max-w-lg">
                 <Image
-                  src="/about1.webp"
+                  src="/deva12.jpeg"
                   alt="Savior's Heartbeat Ministries outreach in India"
                   fill
                   sizes="(min-width: 1024px) 520px, 90vw"

@@ -25,7 +25,7 @@ export default function AboutDevaPage() {
               <div className="sticky top-28 space-y-6">
                 <div className="aspect-[3/4] rounded-[2rem] overflow-hidden bg-stone-100 shadow-[0_32px_64px_-16px_rgba(181,22,87,0.08)] group relative border border-stone-200/60">
                   <Image
-                    src="/about1.webp"
+                    src="/deva12.jpeg"
                     alt="Bishop Deva | Savior's Heartbeat Ministries"
                     fill
                     className="object-cover object-top transition-transform duration-[1.2s] ease-out group-hover:scale-105"
