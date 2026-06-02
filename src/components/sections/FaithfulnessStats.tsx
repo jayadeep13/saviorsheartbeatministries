@@ -46,7 +46,7 @@ export default function FaithfulnessStats() {
             <h2 className="font-[Playfair_Display] text-4xl md:text-5xl lg:text-6xl font-medium text-white leading-[1.15] tracking-tight mb-6">
               Thanking the Lord for{' '}
               <span className="italic font-light text-transparent bg-clip-text bg-gradient-to-r from-[#B51657] via-[#E8527A] to-[#B51657]">
-                His great faithfulness
+                His abundant faithfulness for the last 3 decades
               </span>
             </h2>
 

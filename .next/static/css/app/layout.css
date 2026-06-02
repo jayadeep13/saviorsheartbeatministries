@@ -1456,6 +1456,9 @@ video {
 .animate-spin{
   animation: spin 1s linear infinite;
 }
+.animate-\[boardImageMarquee_48s_linear_infinite\]{
+  animation: boardImageMarquee 48s linear infinite;
+}
 .cursor-default{
   cursor: default;
 }

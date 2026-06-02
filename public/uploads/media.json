@@ -1,5 +1,81 @@
 [
   {
+    "id": "3b2d97b5-67aa-4a0d-b8be-fcb872877d92",
+    "category": "gallery",
+    "galleryGroup": "church-building",
+    "title": "475640488_1510863749581440_3658822583196901611_n (1)",
+    "src": "/uploads/1780426930140-475640488-1510863749581440-3658822583196901611-n-1-3b2d97b5.webp",
+    "createdAt": "2026-06-02T19:02:10.239Z"
+  },
+  {
+    "id": "e5d81be8-9475-4ea8-bc44-8159188acb9f",
+    "category": "gallery",
+    "galleryGroup": "crusades",
+    "title": "Crusade (7)",
+    "src": "/uploads/1780426786874-crusade-7-e5d81be8.webp",
+    "createdAt": "2026-06-02T18:59:46.914Z"
+  },
+  {
+    "id": "f9189035-1ee2-41d1-a73d-a96899898724",
+    "category": "gallery",
+    "galleryGroup": "crusades",
+    "title": "Crusade (9)",
+    "src": "/uploads/1780426770378-crusade-9-f9189035.webp",
+    "createdAt": "2026-06-02T18:59:30.502Z"
+  },
+  {
+    "id": "54f8d172-a940-47ee-a4f7-19bea2a6da9c",
+    "category": "gallery",
+    "galleryGroup": "crusades",
+    "title": "6287375996273411836",
+    "src": "/uploads/1780426471321-6287375996273411836-54f8d172.webp",
+    "createdAt": "2026-06-02T18:54:31.484Z"
+  },
+  {
+    "id": "2ed7aec5-1b4a-463b-b296-c55bcc2681a2",
+    "category": "gallery",
+    "galleryGroup": "homeless-outreach",
+    "title": "6287375996273412037 (1)",
+    "src": "/uploads/1780425803940-6287375996273412037-1-2ed7aec5.webp",
+    "createdAt": "2026-06-02T18:43:24.184Z"
+  },
+  {
+    "id": "bc35d961-d251-4bca-986f-e9ec61fc2ec0",
+    "category": "gallery",
+    "galleryGroup": "homeless-outreach",
+    "title": "471820064_1491409371526878_4012725451550584199_n (1)",
+    "src": "/uploads/1780425785879-471820064-1491409371526878-4012725451550584199-n-1-bc35d961.webp",
+    "createdAt": "2026-06-02T18:43:06.214Z"
+  },
+  {
+    "id": "9396d157-985d-47c0-8f3c-60818da1693c",
+    "category": "books",
+    "title": "DECEMBER",
+    "src": "/uploads/1780421776515-december-9396d157.webp",
+    "createdAt": "2026-06-02T17:36:16.893Z"
+  },
+  {
+    "id": "a0264699-0e53-4a93-8c0f-5b9bcc8fa0e2",
+    "category": "books",
+    "title": "NOVOMBER",
+    "src": "/uploads/1780421746672-novomber-a0264699.webp",
+    "createdAt": "2026-06-02T17:35:47.048Z"
+  },
+  {
+    "id": "79ae1493-4651-4b6e-b93a-1738bf55e27a",
+    "category": "books",
+    "title": "OCTOBER",
+    "src": "/uploads/1780421709899-october-79ae1493.webp",
+    "createdAt": "2026-06-02T17:35:10.205Z"
+  },
+  {
+    "id": "92530e82-bd45-4c19-817c-8d3cb3574b16",
+    "category": "books",
+    "title": "SEPTEMBER",
+    "src": "/uploads/1780421642529-september-92530e82.webp",
+    "createdAt": "2026-06-02T17:34:02.857Z"
+  },
+  {
     "id": "263a9926-a979-43cc-aa7d-d22f49fdbef8",
     "category": "gallery",
     "galleryGroup": "widows",
