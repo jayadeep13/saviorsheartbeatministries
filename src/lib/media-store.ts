@@ -16,10 +16,10 @@ export type MediaItem = {
   createdAt: string
 }
 
-// Detect whether we are running on a serverless platform (Vercel, etc.)
-// where the local filesystem is read-only.
+// Use Vercel Blob only when a token is explicitly configured.
+// Without a token, fall back to the committed public/uploads/media.json.
 function isReadonlyFilesystem() {
-  return process.env.VERCEL === '1' || process.env.BLOB_READ_WRITE_TOKEN !== undefined
+  return !!process.env.BLOB_READ_WRITE_TOKEN
 }
 
 // ── Local filesystem helpers (development) ───────────────────────────────────
