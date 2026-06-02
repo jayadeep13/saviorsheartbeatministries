@@ -3,7 +3,7 @@ import Reveal from '@/components/ui/Reveal'
 
 const stats = [
   { number: '1,500+', label: 'Village Crusades', sub: 'Gospel meetings across India' },
-  { number: '1,500+', label: 'Pastors Conferences', sub: 'Leaders trained & strengthened' },
+  { number: '1,300+', label: 'Pastors Conferences', sub: 'Leaders trained & strengthened' },
   { number: '67', label: 'Village Churches', sub: 'Built & supported across India' },
   { number: '500+', label: 'Communities', sub: 'Reached with the Gospel of Christ' },
   { number: '1999', label: 'Year Founded', sub: 'Over three decades of faithful service' },
