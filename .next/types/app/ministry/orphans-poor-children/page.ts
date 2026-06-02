@@ -1,8 +1,8 @@
-// File: C:\Users\DELL\Downloads\saviors-heartbeat-v2-premium\shb2\src\app\about\board-of-directors\page.tsx
-import * as entry from '../../../../../src/app/about/board-of-directors/page.js'
+// File: C:\Users\DELL\Downloads\saviors-heartbeat-v2-premium\shb2\src\app\ministry\orphans-poor-children\page.tsx
+import * as entry from '../../../../../src/app/ministry/orphans-poor-children/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../src/app/about/board-of-directors/page.js')
+type TEntry = typeof import('../../../../../src/app/ministry/orphans-poor-children/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{

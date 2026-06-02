@@ -33,10 +33,10 @@ export default function AboutPreview() {
               <div className="absolute -bottom-7 right-3 rounded-2xl border border-[#B51657]/18 bg-white p-5 shadow-[0_16px_48px_rgba(181,22,87,0.12)] lg:-right-4">
                 <div className="grid min-w-[220px] grid-cols-2 gap-5">
                   {[
-                    { n: '12', l: 'Churches' },
-                    { n: '100+', l: 'Children' },
-                    { n: '50+', l: 'Years' },
-                    { n: '6+', l: 'Crusades' },
+                    { n: '67+', l: 'Churches' },
+                    { n: '650+', l: 'Children' },
+                    { n: '40+', l: 'Years' },
+                    { n: '1500+', l: 'Crusades' },
                   ].map((s) => (
                     <div key={s.l} className="text-center">
                       <div className="font-[Playfair_Display] text-2xl font-semibold text-[#B51657]">{s.n}</div>

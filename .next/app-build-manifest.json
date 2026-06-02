@@ -11,15 +11,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/about/about-deva/page": [
+    "/ministry/orphans-poor-children/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/about/about-deva/page.js"
-    ],
-    "/about/board-of-directors/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/about/board-of-directors/page.js"
+      "static/chunks/app/ministry/orphans-poor-children/page.js"
     ]
   }
 }

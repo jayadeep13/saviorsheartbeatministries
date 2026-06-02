@@ -1,5 +1,4 @@
 {
-  "/about/about-deva/page": "app/about/about-deva/page.js",
   "/page": "app/page.js",
-  "/about/board-of-directors/page": "app/about/board-of-directors/page.js"
+  "/ministry/orphans-poor-children/page": "app/ministry/orphans-poor-children/page.js"
 }

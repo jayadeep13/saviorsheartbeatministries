@@ -30,10 +30,10 @@ const childCareHighlights = [
 ]
 
 const childCareStats = [
-  { n: '100+', l: 'Children in our care', icon: Heart, tone: 'bg-[#B51657]/5 text-[#B51657] border-[#B51657]/10' },
+  { n: '650+', l: 'Children so far we educated', icon: Heart, tone: 'bg-[#B51657]/5 text-[#B51657] border-[#B51657]/10' },
   { n: '100%', l: 'Education provided', icon: GraduationCap, tone: 'bg-amber-50 text-amber-700 border-amber-100' },
   { n: '100%', l: 'Healthcare covered', icon: HeartPulse, tone: 'bg-emerald-50 text-emerald-700 border-emerald-100' },
-  { n: '24/7', l: 'Love & spiritual care', icon: ShieldCheck, tone: 'bg-blue-50 text-blue-700 border-blue-100' },
+  { n: '24/7', l: 'Prayer Support', icon: ShieldCheck, tone: 'bg-blue-50 text-blue-700 border-blue-100' },
 ]
 
 export default function ChildrenCareContent({
@@ -175,8 +175,7 @@ export default function ChildrenCareContent({
                     />
                     <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 to-transparent" />
                     <div className="absolute bottom-6 left-6 z-30 text-white">
-                      <div className="font-[Playfair_Display] text-4xl font-bold tracking-tight text-[#FF4E88]">100+</div>
-                      <p className="text-[10px] uppercase tracking-widest text-neutral-400 font-bold mt-0.5">Lives Guarded</p>
+                
                     </div>
                   </div>
                   

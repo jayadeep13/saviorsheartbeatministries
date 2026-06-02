@@ -33,8 +33,8 @@ export default function HelpingPastorsBuildingChurchesPage() {
               </p>
 
               <h2 className="font-[Playfair_Display] text-4xl font-medium leading-[1.15] text-[#11162E] md:text-6xl lg:text-[64px]">
-                We don&apos;t only build walls. <br />
-                <span className="italic text-[#B51657]">We build places of hope.</span>
+                We build more than just walls. <br />
+                <span className="italic text-[#B51657]">we create sanctuaries of hope.</span>
               </h2>
 
               <p className="mx-auto mt-8 max-w-2xl font-body text-[16px] leading-[1.7] text-[#30375F]/80">
@@ -74,7 +74,7 @@ export default function HelpingPastorsBuildingChurchesPage() {
                     Churches Built
                   </p>
                   <h3 className="mt-6 font-[Playfair_Display] text-7xl font-semibold leading-none">
-                    12
+                    67
                   </h3>
                   <p className="mt-6 font-body text-[15px] leading-relaxed text-white/80">
                     Each building becomes a place for worship, discipleship,
@@ -137,7 +137,7 @@ export default function HelpingPastorsBuildingChurchesPage() {
               <div className="relative">
                 <span className="absolute -top-10 -left-6 font-serif text-[120px] text-white/5 leading-none">“</span>
                 <p className="relative font-[Playfair_Display] text-2xl md:text-4xl italic leading-relaxed text-white/90">
-                  A church in a village becomes a witness of Christ, a shelter
+                  A Church in a village becomes a witness of Christ, a shelter
                   for prayer, and a foundation for transformed lives.
                 </p>
               </div>
