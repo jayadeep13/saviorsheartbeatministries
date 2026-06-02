@@ -1,8 +1,7 @@
 {
+  "/ministry/prayer-request/page": "app/ministry/prayer-request/page.js",
   "/admin-pannel/page": "app/admin-pannel/page.js",
-  "/page": "app/page.js",
-  "/media/books/page": "app/media/books/page.js",
   "/contact/page": "app/contact/page.js",
-  "/media/photo-gallery/page": "app/media/photo-gallery/page.js",
-  "/api/media/route": "app/api/media/route.js"
+  "/about/about-deva/page": "app/about/about-deva/page.js",
+  "/media/photo-gallery/page": "app/media/photo-gallery/page.js"
 }

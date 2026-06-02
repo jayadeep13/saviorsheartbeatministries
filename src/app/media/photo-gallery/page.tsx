@@ -6,15 +6,15 @@ export const metadata = { title: "Photo Gallery | Savior's Heartbeat Ministries"
 
 const galleryHeroImages = [
   { src: '/family.webp', alt: 'Ministry family' },
-  { src: '/crusades (1).jpg', alt: 'Crusade ministry' },
   { src: '/children.webp', alt: 'Children ministry' },
-  { src: '/out (1).webp', alt: 'Outreach ministry' },
   { src: '/GAL1.webp', alt: 'Gallery moment' },
   { src: '/family1.webp', alt: 'Ministry moments' },
-  { src: '/crusades (2).jpg', alt: 'Crusade gathering' },
-  { src: '/out (2).webp', alt: 'Community outreach' },
   { src: '/past.webp', alt: 'Pastors conference' },
   { src: '/food.webp', alt: 'Feeding ministry' },
+  { src: '/child.webp', alt: 'Children outreach' },
+  { src: '/wod.webp', alt: 'Widows ministry' },
+  { src: '/pre.webp', alt: 'Preaching the gospel' },
+  { src: '/BOD.webp', alt: 'Ministry leaders' },
 ]
 
 export default function GalleryPage() {

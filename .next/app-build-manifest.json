@@ -11,25 +11,40 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/admin-pannel/page": [
+    "/media/photo-gallery/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/admin-pannel/page.js"
+      "static/chunks/app/media/photo-gallery/page.js"
     ],
     "/media/books/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/media/books/page.js"
     ],
-    "/media/photo-gallery/page": [
+    "/support/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/media/photo-gallery/page.js"
+      "static/chunks/app/support/page.js"
+    ],
+    "/about/about-deva/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/about/about-deva/page.js"
     ],
     "/contact/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/contact/page.js"
+    ],
+    "/ministry/prayer-request/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/ministry/prayer-request/page.js"
+    ],
+    "/admin-pannel/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/admin-pannel/page.js"
     ]
   }
 }
