@@ -36,12 +36,23 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null)
   const [desktopOpen, setDesktopOpen] = useState<string | null>(null)
+  // "/" is always blocked for India visitors, so once unlocked via /authorised,
+  // point Home/logo there instead so they don't get sent back to the blocked page.
+  const [homeHref, setHomeHref] = useState('/')
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50)
     window.addEventListener('scroll', fn)
     return () => window.removeEventListener('scroll', fn)
   }, [])
+
+  useEffect(() => {
+    if (document.cookie.split('; ').includes('shb_access=1')) {
+      setHomeHref('/authorised')
+    }
+  }, [])
+
+  const navItems = nav.map((item) => (item.label === 'Home' ? { ...item, href: homeHref } : item))
 
   return (
     <>
@@ -67,7 +78,7 @@ export default function Navbar() {
 
         <div className="mx-auto flex w-full max-w-[118rem] items-center justify-between gap-4 px-4 sm:px-6 lg:px-7 xl:px-10 2xl:px-12">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-4">
+          <Link href={homeHref} className="group flex items-center gap-4">
             <div className="relative h-12 w-12 xl:h-14 xl:w-14">
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-glow transition-all duration-500 animate-pulse-glow group-hover:shadow-glow-lg xl:h-14 xl:w-14">
                 <Image
@@ -100,7 +111,7 @@ export default function Navbar() {
 
           {/* Desktop Nav */}
           <nav className="hidden flex-1 items-center justify-center gap-1 lg:flex xl:gap-2 2xl:gap-3">
-            {nav.map((item) => (
+            {navItems.map((item) => (
               <div
                 key={item.label}
                 className="relative shrink-0"
@@ -197,7 +208,7 @@ export default function Navbar() {
               <button onClick={() => setMobileOpen(false)} className="w-8 h-8 flex items-center justify-center text-white/60 hover:text-white rounded-lg hover:bg-white/10">✕</button>
             </div>
             <nav className="p-4 space-y-1">
-              {nav.map((item) => (
+              {navItems.map((item) => (
                 <div key={item.label}>
                   {item.sub ? (
                     <div>
