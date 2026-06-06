@@ -1,8 +1,4 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/admin-pannel/page": "app/admin-pannel/page.js",
-  "/media/books/page": "app/media/books/page.js",
   "/page": "app/page.js",
-  "/media/photo-gallery/page": "app/media/photo-gallery/page.js",
-  "/api/media/route": "app/api/media/route.js"
+  "/admin-pannel/page": "app/admin-pannel/page.js"
 }

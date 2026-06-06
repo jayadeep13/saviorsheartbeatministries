@@ -1419,6 +1419,9 @@ video {
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.animate-\[boardImageMarquee_48s_linear_infinite\]{
+  animation: boardImageMarquee 48s linear infinite;
+}
 .animate-\[boardImageMarquee_52s_linear_infinite\]{
   animation: boardImageMarquee 52s linear infinite;
 }
@@ -1455,9 +1458,6 @@ video {
 }
 .animate-spin{
   animation: spin 1s linear infinite;
-}
-.animate-\[boardImageMarquee_48s_linear_infinite\]{
-  animation: boardImageMarquee 48s linear infinite;
 }
 .cursor-default{
   cursor: default;
