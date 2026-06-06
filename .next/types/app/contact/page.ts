@@ -1,8 +1,8 @@
-// File: C:\Users\DELL\Downloads\saviors-heartbeat-v2-premium\shb2\src\app\about\about-deva\page.tsx
-import * as entry from '../../../../../src/app/about/about-deva/page.js'
+// File: C:\Users\DELL\Downloads\saviors-heartbeat-v2-premium\shb2\src\app\contact\page.tsx
+import * as entry from '../../../../src/app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../src/app/about/about-deva/page.js')
+type TEntry = typeof import('../../../../src/app/contact/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
