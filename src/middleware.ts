@@ -36,16 +36,32 @@ function getCountry(request: NextRequest) {
   return request.geo?.country ?? request.headers.get('x-vercel-ip-country') ?? ''
 }
 
+function blockedResponse() {
+  return new NextResponse(BLOCKED_HTML, {
+    status: 200,
+    headers: { 'content-type': 'text/html; charset=utf-8' },
+  })
+}
+
 export function middleware(request: NextRequest) {
-  if (getCountry(request) !== BLOCKED_COUNTRY || isUnlocked(request)) {
+  if (getCountry(request) !== BLOCKED_COUNTRY) {
     return NextResponse.next()
   }
 
-  if (request.nextUrl.pathname === UNLOCK_PATH) {
-    const response = NextResponse.redirect(new URL('/', request.url))
-    // No maxAge/expires -> session cookie, cleared when the browser closes
+  const { pathname } = request.nextUrl
+
+  // The bare home page is always hidden from India — no exceptions, even once unlocked.
+  if (pathname === '/') {
+    return blockedResponse()
+  }
+
+  if (pathname === UNLOCK_PATH) {
+    // Serve the home page content directly at /authorised (URL stays /authorised,
+    // since "/" itself is always blocked) and unlock the rest of the site.
+    const response = NextResponse.rewrite(new URL('/', request.url))
+    // No maxAge/expires -> session cookie, cleared when the browser closes.
+    // Not httpOnly so the navbar can detect it and avoid linking back to the blocked "/".
     response.cookies.set(ACCESS_COOKIE, '1', {
-      httpOnly: true,
       secure: true,
       sameSite: 'lax',
       path: '/',
@@ -53,10 +69,11 @@ export function middleware(request: NextRequest) {
     return response
   }
 
-  return new NextResponse(BLOCKED_HTML, {
-    status: 200,
-    headers: { 'content-type': 'text/html; charset=utf-8' },
-  })
+  if (isUnlocked(request)) {
+    return NextResponse.next()
+  }
+
+  return blockedResponse()
 }
 
 export const config = {
