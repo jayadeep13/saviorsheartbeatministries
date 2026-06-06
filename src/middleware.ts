@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-const ACCESS_COOKIE = 'shb_access'
 const UNLOCK_PATH = '/authorised'
 const BLOCKED_COUNTRY = 'IN'
 
@@ -28,10 +27,6 @@ const BLOCKED_HTML = `<!DOCTYPE html>
 </body>
 </html>`
 
-function isUnlocked(request: NextRequest) {
-  return request.cookies.get(ACCESS_COOKIE)?.value === '1'
-}
-
 function getCountry(request: NextRequest) {
   return request.geo?.country ?? request.headers.get('x-vercel-ip-country') ?? ''
 }
@@ -43,6 +38,19 @@ function blockedResponse() {
   })
 }
 
+// True only when the request was triggered by clicking a link on this same site
+// (e.g. navigating from /authorised into an inside page). Typing a URL directly,
+// opening a bookmark, or reloading sends no same-origin referer, so it fails closed.
+function cameFromThisSite(request: NextRequest) {
+  const referer = request.headers.get('referer')
+  if (!referer) return false
+  try {
+    return new URL(referer).origin === request.nextUrl.origin
+  } catch {
+    return false
+  }
+}
+
 export function middleware(request: NextRequest) {
   if (getCountry(request) !== BLOCKED_COUNTRY) {
     return NextResponse.next()
@@ -50,26 +58,20 @@ export function middleware(request: NextRequest) {
 
   const { pathname } = request.nextUrl
 
-  // The bare home page is always hidden from India — no exceptions, even once unlocked.
+  // The bare home page is always hidden from India — no exceptions.
   if (pathname === '/') {
     return blockedResponse()
   }
 
   if (pathname === UNLOCK_PATH) {
     // Serve the home page content directly at /authorised (URL stays /authorised,
-    // since "/" itself is always blocked) and unlock the rest of the site.
-    const response = NextResponse.rewrite(new URL('/', request.url))
-    // No maxAge/expires -> session cookie, cleared when the browser closes.
-    // Not httpOnly so the navbar can detect it and avoid linking back to the blocked "/".
-    response.cookies.set(ACCESS_COOKIE, '1', {
-      secure: true,
-      sameSite: 'lax',
-      path: '/',
-    })
-    return response
+    // since "/" itself is always blocked).
+    return NextResponse.rewrite(new URL('/', request.url))
   }
 
-  if (isUnlocked(request)) {
+  // No cookies, nothing persisted: every other page is reachable only by being
+  // navigated to from inside the site (i.e. starting at /authorised).
+  if (cameFromThisSite(request)) {
     return NextResponse.next()
   }
 
